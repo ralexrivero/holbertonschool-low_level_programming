@@ -1,9 +1,7 @@
-/*
-*main - first c code
+/**
+*main - "Programming is like building a multilingual puzzle"
 *testing and aplling betty style
 */
-
-
 #include <stdio.h>
 #include <stdlib.h>
 int main(void)
