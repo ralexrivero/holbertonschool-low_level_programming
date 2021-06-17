@@ -1,4 +1,4 @@
-//*
+/*
 *main - first c code
 *testing and aplling betty style
 */
