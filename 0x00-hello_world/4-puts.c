@@ -3,7 +3,6 @@
 /**
 *main - print "Programming is like building a multilingual puzzle"
 *testing and aplling betty style
-*
 *return: 0 when finish successfully
 */
 int main(void)
