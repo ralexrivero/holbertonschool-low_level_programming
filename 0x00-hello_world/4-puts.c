@@ -1,11 +1,11 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
-*main - Prints a specified string
+*main - display a text
 *
- *Description: This function will print the string "Programming is like
+ *Description: display "Programming is like
  *building a multilingual puzzle using the puts function.
- *Return: 0 if the programming ran to completion
+ *Return: 0 when finish
  */
 int main(void)
 {
