@@ -1,12 +1,12 @@
 #include <stdio.h>
 /**
-  *main - using printf to display text
-  *
-  *description: diplay: with proper grammar, but the outcome is a piece of art,
-  *return: 0 when finish
-  */
+*main - Prints a specified string
+*
+ *Description: with proper grammar, but the outcome is a piece of art,
+ *Return: 0 if the programming ran to completion
+ */
 int main(void)
 {
-	printf("with proper grammar, but the outcome is a piece of art,");
+	printf ("%s\n, with proper grammar, but the outcome is a piece of art\,");
 	return(0);
 }
