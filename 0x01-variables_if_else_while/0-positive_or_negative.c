@@ -4,6 +4,7 @@
 /*
  *main
  *betty style doc for function main goes there
+ *Return: exit when finish
  */
 int main(void)
 {
