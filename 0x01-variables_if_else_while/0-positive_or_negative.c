@@ -1,12 +1,14 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
+
 /**
- *main conditional function
- *Description: seach for sign in int
- *betty style doc for function main goes there
- *Return: exit when finish
+*main - search sign in int
+*
+ *Description: random int and print sign
+ *Return: 0 if the programming ran to completion
  */
+
 int main(void)
 {
 	int n;
