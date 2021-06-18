@@ -1,7 +1,7 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
-/*
+/**
  *main conditional function
  *betty style doc for function main goes there
  *Return: exit when finish
