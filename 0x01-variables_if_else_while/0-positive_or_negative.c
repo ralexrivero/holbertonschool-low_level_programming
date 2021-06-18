@@ -1,8 +1,12 @@
 #include <stdlib.h>
 #include <time.h>
-/* more headers goes there */
+/*
+ *more headers goes there
+ */
 
-/* betty style doc for function main goes there */
+/*
+ *main betty style doc for function main goes there
+ */
 int main(void)
 {
 	int n;
@@ -12,7 +16,7 @@ int main(void)
 	/* your code goes there */
 	if (n==0)
 {
-	printf("is zero\n", n);
+	printf("%i is zero\n", n);
 }
 else
 {
