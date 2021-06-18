@@ -7,10 +7,11 @@
  */
 int main()
 {
-	int varInt_int
-	long int varLng_lngi
-	long long int varLLI_lli
-	float varFlt_float
+	int varInt_int;
+	long int varLng_lngi;
+	long long int varLLI_lli;
+	float varFlt_float;
+
 	printf("%zu\n", "Size of a char: sizeof(varInt_int)) byte\(s\)";
 	printf("%zu\n", "Size of a char: sizeof(varLng_Lngi)) byte\(s\)";
 	printf("%zu\n", "Size of a char: sizeof(varLLI_lli)) byte\(s\)";
