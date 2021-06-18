@@ -5,7 +5,7 @@
  *Description: with proper grammar, but the outcome is a piece of art,
  *Return: 0 if the programming ran to completion
  */
-int main()
+int main(void)
 {
 	char varChr_char;
 	int varInt_int;
