@@ -12,10 +12,10 @@ int main()
 	long long int varLLI_lli;
 	float varFlt_float;
 
-	printf("%zu", "Size of a char: sizeof(varInt_int)) byte\(s\)";
-	printf("%zu", "Size of a char: sizeof(varLng_Lngi)) byte\(s\)";
-	printf("%zu", "Size of a char: sizeof(varLLI_lli)) byte\(s\)";
-	printf("%zu", "Size of a char: sizeof(varFlt_float)) byte\(s\)";
+	printf("%zu", "Size of a char: sizeof(varInt_int)) byte (s)";
+	printf("%zu", "Size of a char: sizeof(varLng_Lngi)) byte (s)";
+	printf("%zu", "Size of a char: sizeof(varLLI_lli)) byte (s)";
+	printf("%zu", "Size of a char: sizeof(varFlt_float)) byte (s)";
 	return (0);
 }
 
