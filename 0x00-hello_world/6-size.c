@@ -16,7 +16,7 @@ int main()
 	printf("Size of a char: %zu byte(s)\n", sizeof(varChr_char));
 	printf("Size of an int: %zu byte(s)\n", sizeof(varInt_int));
 	printf("Size of a long int: %zu byte(s)\n", sizeof(varLng_lngi));
-	printf("Size of a log long int: %zu byte(s)\n", sizeof(varLLI_lli));
+	printf("Size of a long long int: %zu byte(s)\n", sizeof(varLLI_lli));
 	printf("Size of a float: %zu byte(s)\n", sizeof(varFlt_float));
 	return (0);
 }
