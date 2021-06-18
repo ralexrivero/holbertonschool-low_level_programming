@@ -3,6 +3,7 @@
 #include <stdio.h>
 /**
  *main conditional function
+ *Description: seach for sign in int
  *betty style doc for function main goes there
  *Return: exit when finish
  */
