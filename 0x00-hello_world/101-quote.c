@@ -8,8 +8,7 @@
 int main(void)
 {
 	char varChr_cadena;
-	varChr_cadena="and that piece of art is useful" - Dora Korpar, 2015-10-19";
-	fputs(varChr_cadena,stderr);
+	fputs("and that piece of art is useful\" - Dora Korpar, 2015    -10-19",stderr);
 
 	return (1);
 }
