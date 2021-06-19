@@ -11,7 +11,7 @@ int main(void)
 char alpha;
 int i;
 
-for (i = 97 ; i < 123 ; i++)
+for (i = 'a' ; i <= 'z' ; i++)
 putchar(alpha++);
 putchar('\n');
 return (0);
