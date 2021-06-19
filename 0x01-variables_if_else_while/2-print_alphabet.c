@@ -12,6 +12,6 @@ char alpha;
 int i;
 
 for(i=32;i<69;i++)
-putchar(alpha);
+putchar(alpha++);
 return (0);
 }
