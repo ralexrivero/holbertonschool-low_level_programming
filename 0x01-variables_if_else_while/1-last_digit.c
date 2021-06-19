@@ -1,4 +1,3 @@
-
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
@@ -21,6 +20,6 @@ int main(void)
 	else if (n == 0)
 	printf("Last digit of %i is %i and is 0\n", n, n_ld);
 	else
-	printf("Last digit of %i is %i and is less than 6 and not 0\n", n, n_ld)
+	printf("Last digit of %i is %i and is less than 6 and not 0\n", n, n_ld);
 	return (0);
 }
