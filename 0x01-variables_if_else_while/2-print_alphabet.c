@@ -12,7 +12,7 @@ char alpha;
 int i;
 
 for (i = 1 ; i <= 200 ; i++)
-putchar(alpha);
+putchar(alpha++);
 putchar('\n');
 return (0);
 }
