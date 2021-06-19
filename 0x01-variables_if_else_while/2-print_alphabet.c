@@ -11,8 +11,8 @@ int main(void)
 char alpha;
 int i;
 
-for (i = 'a' ; i <= 'z' ; i++)
-putchar(alpha++);
+for (i = 1 ; i <= 200 ; i++)
+putchar(alpha);
 putchar('\n');
 return (0);
 }
