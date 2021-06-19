@@ -11,7 +11,7 @@ int main(void)
 char alpha;
 int i;
 
-for (i = 1 ; i <= 200 ; i++)
+for (i = 59 ; i <= 84 ; i++)
 putchar(alpha++);
 putchar('\n');
 return (0);
