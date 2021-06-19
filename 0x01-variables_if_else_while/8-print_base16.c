@@ -9,13 +9,11 @@
 int main(void)
 {
 char i;
-/*char iHex;
- */
 
 for (i = '0' ; i <= '9' ; i++)
 putchar(i);
 for (i = 0 ; i <= 5; i++)
-putchar('a'+i);
+putchar('a' + i);
 putchar('\n');
 return (0);
 }
