@@ -12,14 +12,15 @@
 
 int main(void)
 {
-	int n;
+	int n, n_ld;
 	srand(time(0));
         n = rand() - RAND_MAX / 2;
+	n_lm = n % 10;
 	if (n > 5)
-	printf("%i Last digit of ", n, "is",(n % 10) , "and is greater than 5\n");
+	printf(" Last digit of %i is %i and is greater than 5\n", n, n_ld);
 	else if (n == 0)
-	printf("%i Last digit of ", n, "is", (n % 10), "and is 0\n");
+	printf("Last digit of %i is %i and is 0\n", n, n_ld);
 	else
-	printf("%i Last digit of ", n, "is",(n % 10), "and is less than 6 and not 0\n")
+	printf("Last digit of %i is %i and is less than 6 and not 0\n", n, n_ld)
 	return (0);
 }
