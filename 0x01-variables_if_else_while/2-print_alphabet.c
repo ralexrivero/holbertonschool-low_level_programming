@@ -8,6 +8,10 @@
 
 int main(void)
 {
-putchar("abcdefghijklmnopqrstuvwxyz");
+char alpha;
+int i;
+
+for(i=32;i=59;i++)
+putchar(alpha);
 return (0);
 }
