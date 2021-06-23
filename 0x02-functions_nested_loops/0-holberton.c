@@ -15,6 +15,7 @@ int i;
 for (i = 0; i <= 9; i++)
 {
 	_putchar(char_str[i]);
+	_pustchar('/n');
 }
 	return (0);
 }
