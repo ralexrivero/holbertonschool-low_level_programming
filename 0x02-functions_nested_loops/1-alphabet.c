@@ -7,7 +7,7 @@
  *Return: - if the programming ran to completion
  */
 
-int print_alphabet(void)
+void print_alphabet(void)
 {
 
 int i;
