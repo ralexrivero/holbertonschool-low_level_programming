@@ -1,7 +1,7 @@
 #include "holberton.h"
 
 /**
-*print_alphabet_10 - prints the alphabet in lowercase
+*print_alphabet_x10 - prints the alphabet in lowercase
 *
  *Description: _putchar prototype
  *Return: - if the programming ran to completion
