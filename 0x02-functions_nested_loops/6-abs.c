@@ -1,22 +1,17 @@
 #include "holberton.h"
 
 /**
-*main - prints "Holberton"
-*
- *Description: _putchar prototype
- *Return: - if the programming ran to completion
+ * _abs: computes absolute value
+ * Description: return absolute value of an integer
+ * @n: the number to evaluate
+ * Return: 0 when ran complete
  */
 
-int main(void)
+int _abs(int n);
 {
-char char_str[9] = "Holberton";
-int i;
-
-for (i = 0; i <= 8; i++)
-{
-	_putchar(char_str[i]);
-}
-	_putchar('\n');
-
-	return (0);
+	if (n > 0)
+	{
+	return (n);
+	}
+	return (-n);
 }
