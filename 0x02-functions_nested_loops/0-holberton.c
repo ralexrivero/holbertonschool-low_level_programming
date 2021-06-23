@@ -1,10 +1,10 @@
 #include "holberton.h"
 
-/*
- * Prints "HOlberton" folowed by a new line
- * Main: _putchar prototype
- * Description: practicing functions an user libraries
- * Return: when succesfully execute the function
+/**
+*main - prints "Holberton"
+*
+ *Description: _putchar prototype
+ *Return: - if the programming ran to completion
  */
 
 int main(void)
