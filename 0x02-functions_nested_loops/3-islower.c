@@ -7,7 +7,7 @@
  *Return: - if the programming ran to completion
  */
 
-int _islower(int c);
+int _islower(int c)
 {
 return(c >= 97 && <= 122);
 }
