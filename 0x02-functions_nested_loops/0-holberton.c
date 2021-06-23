@@ -9,7 +9,7 @@
 
 int main(void)
 {
-char char_str[8] = "Holberton";
+char char_str[9] = "Holberton";
 int i;
 
 for (i = 0; i <= 8; i++)
