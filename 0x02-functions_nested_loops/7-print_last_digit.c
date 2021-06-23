@@ -1,22 +1,13 @@
 #include "holberton.h"
 
 /**
-*main - prints "Holberton"
-*
- *Description: _putchar prototype
- *Return: - if the programming ran to completion
+ *print_last_digit - print the last digit of a number
+ *@n: number to evaluate
+ *Description: print the last digit of number
+ *Return: 0 when ran complete
  */
 
-int main(void)
+int print_last_digit(int n)
 {
-char char_str[9] = "Holberton";
-int i;
-
-for (i = 0; i <= 8; i++)
-{
-	_putchar(char_str[i]);
-}
-	_putchar('\n');
-
-	return (0);
+	return (n % 10);
 }
