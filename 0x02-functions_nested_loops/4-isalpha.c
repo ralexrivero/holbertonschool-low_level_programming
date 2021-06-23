@@ -1,22 +1,13 @@
 #include "holberton.h"
 
 /**
-*main - prints "Holberton"
-*
- *Description: _putchar prototype
- *Return: - if the programming ran to completion
+ * _isalpha - checks for alphabetic character
+ * Description: isalpha prototype
+ * @c: - the character to evaluate
+ * Return: - 1 if c is a letter, lowercase or uppercase
  */
 
-int main(void)
+int _isalpha(int c)
 {
-char char_str[9] = "Holberton";
-int i;
-
-for (i = 0; i <= 8; i++)
-{
-	_putchar(char_str[i]);
-}
-	_putchar('\n');
-
-	return (0);
+	return (c >= 97 && c <= 122 | c >= 65 && c <= 90);
 }
