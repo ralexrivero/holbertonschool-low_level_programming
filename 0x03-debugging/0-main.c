@@ -1,9 +1,8 @@
 #include "holberton.h"
 /**
- * main - test function for prototype: positive_or_negative
- * Description: debugging prototype
- * Return: 0 if test is ok
- */
+* main - tests function that prints if integer is positive or negative
+* Return: 0
+*/
 int main(void)
 {
 int i;
