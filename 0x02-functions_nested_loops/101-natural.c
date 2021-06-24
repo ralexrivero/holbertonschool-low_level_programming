@@ -1,5 +1,5 @@
 #include <stdio.h>
- 
+
 /**
  * main - list all natural numbers
  * Description: multiplies of 3 or 5
