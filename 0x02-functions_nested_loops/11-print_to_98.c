@@ -1,22 +1,33 @@
+#include <stdio.h>
 #include "holberton.h"
 
 /**
-*main - prints "Holberton"
-*
- *Description: _putchar prototype
- *Return: - if the programming ran to completion
+ * print_to_98 - print natural numbers
+ * Description: from n to 98
+ * @n: initial number
+ * Return: when successfully
  */
 
-int main(void)
+void print_to_98(int n)
 {
-char char_str[9] = "Holberton";
-int i;
 
-for (i = 0; i <= 8; i++)
-{
-	_putchar(char_str[i]);
-}
-	_putchar('\n');
+	int i, j;
 
-	return (0);
+	if (n < 98)
+	{
+		for (i = n; i < 98; i++)
+		{
+			printf("%d, ", i);
+		}
+			printf("98\n");
+		}
+	else if (n > 98)
+	{
+		for (j = n; j > 98; j--)
+		{
+			printf("%d, ", j);
+		}
+			printf("98\n");
+		}
+	}
 }
