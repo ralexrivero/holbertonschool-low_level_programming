@@ -8,14 +8,20 @@
 
 int main(void)
 {
-	long int i_loop, fibo;
+	long int i_loop, fa, fb, fc, fd;
 
-	fibo = 1;
-	for (i_loop = 1; i_loop <= 50; i_loop++)
+	fa = 0;
+	fb = 1;
+	fc = 1;
+	printf("%ld, ", fc);
+	for (i_loop = 0; i_loop <= 47; i_loop++)
 	{
-		fibo = fibo + fibo;
-		printf("%ld, ", fibo);
+		fa = fb;
+		fb = fc;
+		fc = fa + fb;
+		printf("%ld, ", fc);
 	}
-	putchar ('\n');
+	fc = fc + fb;
+	printf("%ld\n", fc);
 	return (0);
 }
