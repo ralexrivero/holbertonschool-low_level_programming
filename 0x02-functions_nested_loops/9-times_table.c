@@ -1,22 +1,22 @@
 #include "holberton.h"
 
 /**
-*main - prints "Holberton"
-*
- *Description: _putchar prototype
- *Return: - if the programming ran to completion
+ * times_table - ciclo anidado
+ * Description: print 9 times table
+ * Return: 0 when done
  */
 
-int main(void)
+void times_table(void)
 {
-char char_str[9] = "Holberton";
-int i;
+int i, j;
 
-for (i = 0; i <= 8; i++)
-{
-	_putchar(char_str[i]);
-}
-	_putchar('\n');
-
-	return (0);
-}
+	for (i = 0; i <= 9; i++)
+	{
+		for (j + (i + 1);; i += 9)
+		{
+			_putchar (i);
+			_putchar (',');
+			_putchar (' ');
+			_putchar (' ');
+		}
+	}
