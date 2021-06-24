@@ -1,22 +1,28 @@
 #include "holberton.h"
 
 /**
-*main - prints "Holberton"
-*
- *Description: _putchar prototype
- *Return: - if the programming ran to completion
+ * jack_bauer - loop in every minute of the day
+ * Description: print every minute of the day
+ *Return: always 0
  */
 
-int main(void)
+void jack_bauer(void)
 {
-char char_str[9] = "Holberton";
-int i;
-
-for (i = 0; i <= 8; i++)
+int i, j;
+i = 0;
+while (i < 24)
 {
-	_putchar(char_str[i]);
+	j = 0;
+	while (j < 60)
+	{
+		_putchar((i / 10) + '0');
+		_putchar((i % 10) + '0');
+		_putchar(':');
+		_putchar((j / 10) + '0');
+		_putchar((j % 10) + '0');
+		_putchar('\n');
+		j++;
+	}
+	i++;
 }
-	_putchar('\n');
-
-	return (0);
 }
