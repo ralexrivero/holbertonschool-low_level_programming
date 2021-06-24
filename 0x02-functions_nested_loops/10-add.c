@@ -3,8 +3,8 @@
 /**
  * add - adds integer
  * Description: adds two integer and return the result
- * @a: int a
- * @b: int b
+ * @num_a: int a
+ * @num_b: int b
  * Return: the result of the add
  */
 
