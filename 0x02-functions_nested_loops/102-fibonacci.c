@@ -8,7 +8,7 @@
 
 int main(void)
 {
-	long int i_loop, fa, fb, fc, fd;
+	long int i_loop, fa, fb, fc;
 
 	fa = 0;
 	fb = 1;
