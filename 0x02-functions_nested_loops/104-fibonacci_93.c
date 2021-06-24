@@ -18,15 +18,15 @@ int main(void)
 	fa = 0;
 	fb = 1;
 	fc = 1;
-	printf("%.0f, ", fc);
-	for (i_loop = 0; i_loop <= 94; i_loop++)
+	printf("%lu, ", fc);
+	for (i_loop = 0; i_loop <= 95; i_loop++)
 	{
 		fa = fb;
 		fb = fc;
 		fc = fa + fb;
-		printf("%.0f, ", fc);
+		printf("%lu, ", fc);
 	}
 	fc = fc + fb;
-	printf("%.0f\n", fc);
+	printf("%lu\n", fc);
 	return (0);
 }
