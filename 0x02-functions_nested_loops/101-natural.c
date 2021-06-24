@@ -19,13 +19,13 @@ int main(void)
 	{
 		if ((i % 3) == 0)
 		{
-			sum3 = sum3 + i;
+			mul3 = mul3 + i;
 		} else if ((i % 5) == 0)
 		{
-			sum5 = sum5 + i;
+			mul5 = mul5 + i;
 		}
 	}
-	sum = sum3 + sum5;
+	sum = mul3 + mul5;
 	printf("%lu\n", sum);
 	return (0);
 }
