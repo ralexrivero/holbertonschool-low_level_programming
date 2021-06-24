@@ -1,5 +1,4 @@
 #include <stdio.h>
-
 /**
  * main - first 98 Fibonacci numbers
  * Descriptions: starting with 1 and 2, newline
@@ -13,20 +12,18 @@
 
 int main(void)
 {
-	float i_loop, fa, fb, fc;
+	long double i_loop, fa, fb;
 
-	fa = 0;
-	fb = 1;
-	fc = 1;
-	printf("%.0f, ", fc);
+	fa = 1;
+	fb = 2;
+	printf("%.0Lf, ", fa);
 	for (i_loop = 0; i_loop <= 95; i_loop++)
 	{
-		fa = fb;
-		fb = fc;
-		fc = fa + fb;
-		printf("%.0f, ", fc);
+		fb = fb + fa;
+		fa = fb - fa;
+		printf("%.0Lf, ", fb);
 	}
-	fc = fc + fb;
-	printf("%.0f\n", fc);
+	fb = fb + fa;
+	printf("%.0Lf\n", fb);
 	return (0);
 }
