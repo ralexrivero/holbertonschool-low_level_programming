@@ -19,7 +19,7 @@ int main(void)
 	fb = 1;
 	fc = 1;
 	printf("%.0f, ", fc);
-	for (i_loop = 0; i_loop <= 94; i_loop++)
+	for (i_loop = 0; i_loop <= 95; i_loop++)
 	{
 		fa = fb;
 		fb = fc;
