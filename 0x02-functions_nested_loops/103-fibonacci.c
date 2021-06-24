@@ -5,21 +5,27 @@
  * Description: starting 1, 2, 3, ...
  * Return: zero when done
  */
-
 int main(void)
 {
-long int fa, fb, fc;
+	int i;
+	unsigned long int j, k, next, sum;
 
-fa = 0;
-fb = 0;
-fc = 1;
-while (fc <= 4000000)
-{
-fa = fb;
-fb = fc;
-fc = fa + fb;
-if (fc <= 4000000)
-	printf("%ld\n", fc);
-}
+	j = 1;
+	k = 2;
+	sum = 0;
+
+	for (i = 1; i <= 33; ++i)
+	{
+		if (j < 4000000 && (j % 2) == 0)
+		{
+			sum = sum + j;
+		}
+		next = j + k;
+		j = k;
+		k = next;
+	}
+
+	printf("%lu\n", sum);
+
 	return (0);
 }
