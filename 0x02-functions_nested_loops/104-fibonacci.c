@@ -11,7 +11,7 @@
  * Twitter: @ralex_uy
  */
 
-float main(void)
+int main(void)
 {
 	float i_loop, fa, fb, fc;
 
