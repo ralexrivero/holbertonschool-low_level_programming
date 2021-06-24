@@ -1,22 +1,15 @@
-#include "holberton.h"
+#include "holberton.c"
 
 /**
-*main - prints "Holberton"
-*
- *Description: _putchar prototype
- *Return: - if the programming ran to completion
+ * add - adds integer
+ * Description: adds two integer and return the result
+ * @a: int a
+ * @b: int b
+ * Return: the result of the add
  */
 
-int main(void)
+int add(int num_a, int num_b)
 {
-char char_str[9] = "Holberton";
-int i;
 
-for (i = 0; i <= 8; i++)
-{
-	_putchar(char_str[i]);
-}
-	_putchar('\n');
-
-	return (0);
+return (num_a + num_b);
 }
