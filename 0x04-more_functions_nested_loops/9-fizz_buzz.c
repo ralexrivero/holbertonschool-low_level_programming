@@ -32,4 +32,5 @@ for (c = 1; c <= 99; c++)
 }
 }
 printf("Buzz\n");
+return (0);
 }
