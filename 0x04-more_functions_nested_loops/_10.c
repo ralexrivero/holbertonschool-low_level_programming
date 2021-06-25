@@ -11,7 +11,7 @@ void main(int size)
 {
 int height, base, ind;
 
-size = 10;
+size = 20;
 if (size > 0)
 	for (height = 1; height <= size; height++)
 	{
