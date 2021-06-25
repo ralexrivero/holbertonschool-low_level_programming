@@ -18,4 +18,6 @@ for (h = 1; h <= size; h++)
 	_putchar(35);
 	_putchar('\n');
 }
+else
+_putchar('\n');
 }
