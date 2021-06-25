@@ -10,7 +10,7 @@ int main(void)
 {
 int c;
 
-for (c = 1; c <= 100; c++)
+for (c = 1; c <= 99; c++)
 {
 {
 	if ((c % 3) == 0 && (c % 5) == 0)
@@ -31,5 +31,5 @@ for (c = 1; c <= 100; c++)
 	}
 }
 }
-putchar('\n');
+printf("Buzz\n");
 }
