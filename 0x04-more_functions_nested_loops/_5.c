@@ -1,4 +1,4 @@
-#include "holberton.h"
+#include <stdio.h>
 
 /**
  * more_numbers - print numbers
@@ -6,7 +6,7 @@
  * Return: zero
  */
 
-void more_numbers(void)
+void main(void)
 {
 	int i, j;
 
@@ -15,12 +15,15 @@ void more_numbers(void)
 	for (j = 0; j <= 14; j++)
 	{
 	if (j < 10)
-		_putchar(j + '0');
+	{
+		putchar(j + '0');
+	}
 	else
 	{
-		_putchar((j / 10) + '0');
-		_putchar((j % 10) + '0');
+		putchar((j / 10) + '0');
+		putchar((j % 10) + '0');
 	}
 	}
+	putchar('\n');
 	}
 }
