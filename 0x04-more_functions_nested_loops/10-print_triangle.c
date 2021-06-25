@@ -19,4 +19,6 @@ for (base = 1; base <= (height); base++)
 _putchar(35);
 _putchar('\n');
 }
+else
+_putchar('\n');
 }
