@@ -1,16 +1,21 @@
 #include "holberton.h"
 
 /**
- * print_triangle
+ * print_triangle - print figure
  * Description: prints a triangle
  * @size: the size, if greater than 0
  * Return: when ran complete
  */
+
 void main(int size)
 {
 int height, base, ind;
 
-if (size > 0)
+if (size < 0)
+{
+_putchar('\n');
+}
+else
 {
 for (height = 1; height <= size; height++)
 {
@@ -21,6 +26,4 @@ _putchar(35);
 _putchar('\n');
 }
 }
-else
-_putchar('\n');
 }
