@@ -48,5 +48,4 @@ void print_number(int n)
 	if (b)
 		_putchar(b + '0');
 	_putchar((a % 10) + '0');
-	_putchar('\n');
 }
