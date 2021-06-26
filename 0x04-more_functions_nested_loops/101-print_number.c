@@ -1,5 +1,4 @@
 #include "holberton.h"
-
 /**
  * print_number - print an integer
  * Description: print an integer by prototype
@@ -8,44 +7,33 @@
  */
 void print_number(int n)
 {
-	int a, b;
+
+	char l;
+	int r;
+	char d;
 
 	if (n < 0)
 	{
-		a = n * -1;
 		_putchar('-');
+		l = ('0' - (n % 10));
+		n /= -10;
+	} else
+	{
+		l = ((n % 10) + '0');
+		n /= 10;
 	}
-	else
-		a = n;
-	b = a / 10000000000;
-	if (b)
-		_putchar(b + '0');
-	b = ((a / 1000000000) % 10);
-	if (b)
-		_putchar(b + '0');
-	b = ((a / 100000000) % 10);
-	if (b)
-		_putchar(b + '0');
-	b = ((a / 10000000) % 10);
-	if (b)
-		_putchar(b + '0');
-	b = ((a / 1000000) % 10);
-	if (b)
-		_putchar(b + '0');
-	b = ((a / 100000) % 10);
-	if (b)
-		_putchar(b + '0');
-	b = ((a / 10000) % 10);
-	if (b)
-		_putchar(b + '0');
-	b = ((a / 1000) % 10);
-	if (b)
-		_putchar(b + '0');
-	b = ((a / 100) % 10);
-	if (b)
-		_putchar(b + '0');
-	b = ((a / 10) % 10);
-	if (b)
-		_putchar(b + '0');
-	_putchar((a % 10) + '0');
+	r = 0;
+	while (n > 0)
+	{
+		r = r * 10 + (n % 10);
+		n /= 10;
+	}
+
+	while (r > 0)
+	{
+		d = ((r % 10) + '0');
+		_putchar (d);
+		r /= 10;
+	}
+	_putchar(l);
 }
