@@ -8,13 +8,44 @@
  */
 void print_number(int n)
 {
-unsigned int num = n;
-if (n < 0)
-{
-_putchar('-');
-num = -num;
-}
-if ((num / 10) > 0)
-print_number(num / 10);
-_putchar((num % 10) + '0');
+	int a, b;
+
+	if (n < 0)
+	{
+		n = -n;
+		_putchar('-');
+	}
+	else
+		a = n;
+	b = a / 10000000000;
+	if (b)
+		_putchar(b + '0');
+	b = ((a / 1000000000) % 10);
+	if (b)
+		_putchar(b + '0');
+	b = ((a / 100000000) % 10);
+	if (b)
+		_putchar(b + '0');
+	b = ((a / 10000000) % 10);
+	if (b)
+		_putchar(b + '0');
+	b = ((a / 1000000) % 10);
+	if (b)
+		_putchar(b + '0');
+	b = ((a / 100000) % 10);
+	if (b)
+		_putchar(b + '0');
+	b = ((a / 10000) % 10);
+	if (b)
+		_putchar(b + '0');
+	b = ((a / 1000) % 10);
+	if (b)
+		_putchar(b + '0');
+	b = ((a / 100) % 10);
+	if (b)
+		_putchar(b + '0');
+	b = ((a / 10) % 10);
+	if (b)
+		_putchar(b + '0');
+	_putchar((a % 10) + '0');
 }
