@@ -19,11 +19,15 @@ else
 {
 for (height = 1; height <= size; height++)
 {
-for (ind = 1; ind <= (size - height); ind++)
+for (ind = height; ind < size; ind++)
+{
 _putchar(' ');
+}
 for (base = 1; base <= height; base++)
+{
 _putchar('#');
 }
 _putchar('\n');
+}
 }
 }
