@@ -21,9 +21,9 @@ for (height = 1; height <= size; height++)
 {
 for (ind = 1; ind <= (size - height); ind++)
 _putchar(' ');
-for (base = 1; base <= (height); base++)
+for (base = 1; base <= height; base++)
 _putchar('#');
-_putchar('\n');
 }
+_putchar('\n');
 }
 }
