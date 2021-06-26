@@ -7,7 +7,7 @@
  * Return: when ran complete
  */
 
-void main(int size)
+void print_triangle(int size)
 {
 int height, base, ind;
 

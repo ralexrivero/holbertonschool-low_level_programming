@@ -20,9 +20,9 @@ else
 for (height = 1; height <= size; height++)
 {
 for (ind = 1; ind <= (size - height); ind++)
-putchar(32);
+putchar(' ');
 for (base = 1; base <= (height); base++)
-putchar(35);
+putchar('#');
 putchar('\n');
 }
 }
