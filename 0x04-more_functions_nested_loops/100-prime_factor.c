@@ -29,5 +29,5 @@ x = x / i;
 if (x > 2)
 max = x;
 printf("%ld\n", max);
-return(0);
+return (0);
 }
