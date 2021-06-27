@@ -7,33 +7,31 @@
  */
 void print_number(int n)
 {
+int digits, n_d, n_obo;
 
-	char l;
-	int r;
-	char d;
-
-	if (n < 0)
-	{
-		_putchar('-');
-		l = ('0' - (n % 10));
-		n /= -10;
-	} else
-	{
-		l = ((n % 10) + '0');
-		n /= 10;
-	}
-	r = 0;
-	while (n > 0)
-	{
-		r = r * 10 + (n % 10);
-		n /= 10;
-	}
-
-	while (r > 0)
-	{
-		d = ((r % 10) + '0');
-		_putchar (d);
-		r /= 10;
-	}
-	_putchar(l);
+/* If n is smaller than 0, put a - sign */
+/* and change number to positive */
+if (n < 0)
+{
+	_putchar('-');
+	n = -n;
+}
+/* count digits of n */
+digits = 0;
+n_d = n;
+while (n_d > 0)
+{
+n_d = n_d / 10;
+digits++;
+}
+/* iterate from first digit until last */
+n_obo = n;
+while (digits > 0)
+{
+n_obo = (n_obo / (10 ^ (digits - 1)));
+--digits;
+_putchar(digits + '0');
+_putchar('-');
+}
+return;
 }
