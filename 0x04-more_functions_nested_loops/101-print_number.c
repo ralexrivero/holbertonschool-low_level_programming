@@ -7,31 +7,32 @@
  */
 void print_number(int n)
 {
-int digits, n_d, n_obo;
+int digits, n_d, i, power, n_obo;
 
-/* If n is smaller than 0, put a - sign */
-/* and change number to positive */
-if (n < 0)
+if (n < 0) /* change number to positive */
 {
 	_putchar('-');
 	n = -n;
 }
-/* count digits of n */
-digits = 0;
+if (n == 0)
+{
+	_putchar('0');
+}
+digits = 0; /*count digits of n*/
 n_d = n;
 while (n_d > 0)
 {
 n_d = n_d / 10;
 digits++;
 }
-/* iterate from first digit until last */
-n_obo = n;
-while (digits > 0)
+while(digits > 0){ /*power of ten according to number of digits */
+power = 1;
+for(i = 2; i <= (digits); i++)
 {
-n_obo = (n_obo / (10 ^ (digits - 1)));
---digits;
-_putchar(digits + '0');
-_putchar('-');
+power = (power * 10);
 }
-return;
+--digits;
+n_obo = (n / power) % 10;
+_putchar(n_obo + '0');
+}
 }
