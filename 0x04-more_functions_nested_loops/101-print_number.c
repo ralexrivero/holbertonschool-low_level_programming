@@ -14,10 +14,6 @@ if (n < 0)
 _putchar('-');
 n = -n;
 }
-if (n == 0)
-{
-_putchar('0');
-}
 digits = 0;
 n_d = n;
 while (n_d > 0)
