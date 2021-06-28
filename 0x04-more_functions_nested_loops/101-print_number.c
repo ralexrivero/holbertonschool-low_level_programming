@@ -25,7 +25,7 @@ if (digits == 0)
 {
 	digits = 1;
 }
-while(digits > 0)
+while (digits > 0)
 { /* power of ten according to number of digits*/
 power = 1;
 for (i = 1; i <= (digits - 1); i++)
