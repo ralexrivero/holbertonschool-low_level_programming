@@ -9,25 +9,26 @@ void print_number(int n)
 {
 int digits, n_d, i, power, n_obo;
 
-if (n < 0) /* change number to positive */
+if (n < 0)
 {
 	_putchar('-');
 	n = -n;
 }
 if (n == 0)
 {
-	_putchar('0');
+_putchar('0');
 }
-digits = 0; /*count digits of n*/
+digits = 0;
 n_d = n;
 while (n_d > 0)
 {
 n_d = n_d / 10;
 digits++;
 }
-while(digits > 0){ /*power of ten according to number of digits */
+while (digits > 0)
+{
 power = 1;
-for(i = 2; i <= (digits); i++)
+for (i = 2; i <= (digits); i++)
 {
 power = (power * 10);
 }
