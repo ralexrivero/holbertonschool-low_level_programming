@@ -14,6 +14,10 @@ if (n < 0)
 _putchar('-');
 n = -n;
 }
+if (n == 0)
+{
+_putchar(n + '0');
+}
 digits = 0;
 n_d = n;
 while (n_d > 0)
@@ -24,7 +28,7 @@ digits++;
 while (digits > 0)
 {
 power = 1;
-for (i = 2; i <= (digits); i++)
+for (i = 1; i <= (digits -1); i++)
 {
 power = (power * 10);
 }
