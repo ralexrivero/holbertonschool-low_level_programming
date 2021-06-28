@@ -9,7 +9,7 @@ void print_number(int n)
 {
 int digits, n_d, i, power, n_obo;
 
-if (n < 0) /* If n is smaller than 0, put a - sign and change number to positive */
+if (n < 0) /* Put a - sign and change number to positive */
 {
 	_putchar('-');
 	n = -n;
@@ -25,9 +25,10 @@ if (digits == 0)
 {
 	digits = 1;
 }
-while(digits > 0){ /* power of ten according to number of digits*/
+while(digits > 0)
+{ /* power of ten according to number of digits*/
 power = 1;
-for(i = 1; i <= (digits -1); i++)
+for (i = 1; i <= (digits - 1); i++)
 {
 power = (power * 10);
 }
