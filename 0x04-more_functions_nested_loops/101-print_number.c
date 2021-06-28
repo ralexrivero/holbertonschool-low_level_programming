@@ -11,8 +11,8 @@ int digits, n_d, i, power, n_obo;
 
 if (n < 0)
 {
-	_putchar('-');
-	n = -n;
+_putchar('-');
+n = -n;
 }
 if (n == 0)
 {
