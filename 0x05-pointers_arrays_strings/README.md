@@ -10,5 +10,6 @@
 ```
 
 [LinkedIn: Ronald Rivero](https://www.linkedin.com/in/ronald-rivero/)
+
 [Twitter: @ralex_uy](https://twitter.com/ralex_uy)
 
