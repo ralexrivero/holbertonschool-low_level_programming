@@ -12,13 +12,14 @@ int l, i;
 
 for (l = 0; str[l] != '\0'; l++)
 	;
-if ((l % 2) == 0) /* lenght is odd */
+if ((l % 2) == 0) /* lenght is pair */
 {
 	for (i = (l / 2); i <= l; i++)
 	_putchar(str[i]);
 } /* else is odd */
-for (i = (l - 1 )/ 2; i <= l - 1; i ++)
+else
 {
+for (i = (l - 1 )/ 2; i < l - 1; i++)
 	_putchar(str[i + 1]);
 }
 _putchar('\n');
