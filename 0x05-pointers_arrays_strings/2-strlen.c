@@ -1,5 +1,5 @@
 #include "holberton.h"
-#include <stdio.h>
+
 /**
  * _strlen - prototype function
  * Description: return length of a string
@@ -9,6 +9,8 @@
 
 int _strlen(char *s)
 {
-printf("%lu", sizeof(*s));
-return (0);
+int i;
+
+for (i = 0; s[i] != '\0'; i++);
+return (i);
 }
