@@ -13,7 +13,7 @@ char swap;
 
 for (len = 0; s[len] != '\0'; len++)
 	;
-lenb = len -1;
+lenb = len - 1;
 for (i = 0; i < len / 2; i++)
 {
 	swap = s[i];
