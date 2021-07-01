@@ -6,6 +6,7 @@
  * @dest: final string
  * @src: initial string
  * @n: amount of bytes
+ * Return: dest
  */
 
 char *_strncpy(char *dest, char *src, int n)
