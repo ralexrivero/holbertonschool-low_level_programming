@@ -7,20 +7,21 @@
  * Return: when done complete
  * string to encode
  */
-
 char *leet(char *s)
 {
-char lt[][3] = {{'a', 'A', '4'}, {'e', 'E', '3'}, {'o', 'O', '0'},
-{'t', 'T', '7'}, {'l', 'L', '1'}};
-int i, j;
-
-for (i = 0; s[i] != '\0'; i++)
-{
-for (j = 0; j <= 4; j++)
-{
-if (s[i] == lt[j][0] && s[i]== lt[j][1])
-s[i] = lt[j][2];
-}
-}
+int lt[3][5] = {{'a', 'e', 'o', 't', 'l'},
+                {'A', 'E', 'O', 'T', 'L'},
+                {'4', '3', '0', '7', '1'},
+                };
+i = 0, j = 0;
+ 
+for (; s[i] != '\0'; i++)
+    {
+    for (; j <= 4; j++)
+        {
+        if (s[i] == lt[0][j] && s[i] == lt[1][j])
+        s[i] = lt[0][j];
+        }
+    }
 return (s);
 }
