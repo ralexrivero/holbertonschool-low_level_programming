@@ -7,7 +7,7 @@
  */
 void print_number(int n)
 {
-int digits, n_d, i, power, n_obo;
+unsigned int digits, n_d, i, power, n_obo;
 
 if (n < 0) /* Put a - sign and change number to positive */
 {
