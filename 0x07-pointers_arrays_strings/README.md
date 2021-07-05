@@ -13,7 +13,7 @@ This directory includes the following projects
 
 - Header
  - holberton.h including all the prototypes
-- _Putchar.c a prototype to emulate the original putchar
+ - _Putchar.c a prototype to emulate the original putchar
 
 Functions
 
