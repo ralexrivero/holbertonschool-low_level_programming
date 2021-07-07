@@ -2,7 +2,7 @@
 
 /**
  * _strlen_recursion - return length
- * Description: of a string
+ * Description: using wildcard *
  * @s: the string to evaluate
  * Return: the addition of one byte of length
  */
@@ -24,7 +24,7 @@ return (1 + _strlen_recursion(s + 1));
 
 int wildcmp(char *s1, char *s2)
 {
-if _strlen_recursion(*s1) != _strlen_recursion(*s2);
+if (_strlen_recursion(s1) != _strlen_recursion(s2))
 return (0);
 return (1);
 }
