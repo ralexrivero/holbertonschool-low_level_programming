@@ -1,4 +1,4 @@
-# 0x08. C - Recursión
+# 0x08. C - Recursión :cyclone:
 
 ## Learning Objectives
 
