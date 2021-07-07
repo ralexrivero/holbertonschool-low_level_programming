@@ -15,7 +15,7 @@ return (_prime(n, n - 1));
 }
 
 /**
- * _prime(int n, int i)
+ * _prime - recursive prime
  * Description: recusive prime calculation
  * Return: when prime 1 otherwise 0
  * @n: the number
