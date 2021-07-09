@@ -8,6 +8,9 @@
 - How to use attribute((unused)) or (void) to compile functions with unused variables or parameters
 
 ## Enviroment
+<div >
+  <a href="https://www.cprogramming.com/"><img src="https://raw.githubusercontent.com/ralexrivero/xelar_theme_profile/main/icons/language_c-programming.svg" alt="C programming language"></a>
+</div>
 
 - Language: C
 - OS: Ubuntu 20.04 LTS
