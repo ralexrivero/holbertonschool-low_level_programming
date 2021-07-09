@@ -11,7 +11,7 @@
 
 - Language: C
 - OS: Ubuntu 20.04 LTS
-- Compiler: gcc 4.8.4
+- Compiler: gcc 9.3.0
 Style guidelines: [Betty style](https://github.com/holbertonschool/Betty/wiki)
 
 ## Autor
