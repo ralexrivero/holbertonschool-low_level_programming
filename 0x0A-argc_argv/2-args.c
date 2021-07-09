@@ -1,9 +1,17 @@
 #include "holberton.h"
+#include <stdio.h>
+#include <stdlib.h>
 
 /**
- *
- * Description:
- * Return:
+ * main - prints arguments received
+ * Description: all arguments, including the first one, once per line
+ * and a new line
+ * Return: EXIT_SUCCESS
  */
 
-
+int main(int argc, char **argv)
+{
+	while(argc--)
+		printf("%s\n", *argv++);
+	exit (EXIT_SUCCESS);
+}
