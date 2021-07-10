@@ -7,6 +7,8 @@
  * Description: all arguments, including the first one, once per line
  * and a new line
  * Return: EXIT_SUCCESS
+ * @argv: argument count
+ * @argc: argument vector
  */
 
 int main(int argc, char **argv)
