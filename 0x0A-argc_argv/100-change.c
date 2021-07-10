@@ -3,7 +3,8 @@
 #include <stdlib.h>
 
 /**
- * main - prints the minimum number of coins to make change for an amount of money
+ * main - prints the minimum number of coins to make change for
+ * an amount of money
  * Description: cents is the amount of cents you need to give back
  * Return: if the number of arguments passed to your program is not exactly 1,
  * print Error, followed by a new line, and return 1
