@@ -7,6 +7,8 @@
  * Description: assume that the two numbers and the result
  * cand be stored in int
  * Return: 1 and pritn Error if not recive two arguments
+ * @argc: count arguments
+ * @argv: argument vector
  */
 
 int main(int argc, char *argv[])
@@ -16,6 +18,6 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		return (1);
 	}
-	printf("%d\n", atoi(argv[1])* atoi(argv[2]));
-	exit (EXIT_SUCCESS);
+	printf("%d\n", atoi(argv[1]) * atoi(argv[2]));
+	exit(EXIT_SUCCESS);
 }
