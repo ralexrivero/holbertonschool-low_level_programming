@@ -1,4 +1,3 @@
-lines (24 sloc) 372 Bytes
 #include "holberton.h"
 /**
  * _strncat - function is similar to the _strcat
