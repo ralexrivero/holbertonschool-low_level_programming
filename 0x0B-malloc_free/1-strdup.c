@@ -2,6 +2,12 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+/**
+ * _strdup - a copy of the string given as a parameter
+ * Description: using malloc
+ * @str: the string to copy
+ * Return: a pointer to a newly allocated space in memory
+ */
 
 char *_strdup(char *str)
 {
@@ -9,16 +15,21 @@ char *_strdup(char *str)
 	int i = 0;
 	int length = 0;
 	
-	for(length = 0; *(str+length) != '\0'; length++)
+	if(str)
 	{
-		/* size of string */
-	}
-	p = malloc(sizeof(char) * length);
-	if(p)
-	{
-		for(i = 0; i < length; i++)
+		for(length = 0; *(str+length) != '\0'; length++)
 		{
-			p[i] - str[i]
+		/* size of string */
+		}
+		p = malloc(sizeof(char) * length);
+		if(p)
+		{
+			for(i = 0; i < length; i++)
+			{
+				p[i] - str[i]
+			}
+			p[length] = '\0';
 		}
 	}
+	return p;
 }
