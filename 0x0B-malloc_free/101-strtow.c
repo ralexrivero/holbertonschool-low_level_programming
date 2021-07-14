@@ -32,7 +32,7 @@ int count_word(char *s)
  * @str: string to split into words
  *
  * Return: 0 pointer to an array of strings
- * or 1 NULL 
+ * or 1 NULL
  */
 char **strtow(char *str)
 {
