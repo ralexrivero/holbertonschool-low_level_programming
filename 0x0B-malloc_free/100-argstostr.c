@@ -1,57 +1,47 @@
+#include "holberton.h"
 #include <stdlib.h>
-#include <stdio.h>
-int _strLen(char *);
+
 /**
- * argstostr - takes all args and concatenates them into str
+ * argstostr - Creates a string from the concatenation of all the
+ * arguments of a program
+ * @ac: The number of arguments to the program
+ * @av: The array of arguments to the program
  *
- * @ac: arg count, num of args in av
- * @av: array of pointers to words (args)
- *
- * Return: pointer to beginning of new string
+ * Return: The pointer to the string or NULL if memory allocation
+ * fails or ac is 0 or av is NULL
  */
 char *argstostr(int ac, char **av)
 {
-	int i = 0, n = 0, totalSize = 0;
-	char *newStr, *startNewStr;
+	int i, j;
+	char *str;
+	int len = 0;
 
-	if (ac <= 0 || av == NULL)
+	if (ac == 0 || av == NULL)
 		return (NULL);
-
-	while (i < ac)
+	for (i = 0; i < ac; i++)
 	{
-		totalSize += _strLen(av[i]) + 1; /* need space for additional new line */
-		i++;
+		for (j = 0; *(*(av + i) + j) != '\0'; j++)
+			len++;
 	}
-	newStr = malloc(sizeof(char) * totalSize + 1); /* plus null byte */
-	if (newStr == NULL) /* ran out of memory */
-		return (NULL);
-	startNewStr = newStr;
-
-	i = 0;
-	while (i < ac)
+	str = malloc(sizeof(char) * (len + i + 1));
+	if (str)
 	{
-		for (n = 0; av[i][n]; n++)
+		len = 0;
+		for (i = 0; i < ac; i++)
 		{
-			*newStr++ = av[i][n];
+			for (j = 0; *(*(av + i) + j) != '\0'; j++)
+			{
+				*(str + len) = *(*(av + i) + j);
+				len++;
+			}
+			*(str + len) = '\n';
+			len++;
 		}
-		*newStr++ = '\n';
-		i++;
+		*(str + len) = '\0';
+		return (str);
 	}
-	*newStr = '\0';
-	return (startNewStr);
-}
-/**
- * _strLen - returns length of string
- *
- * @s: string to check
- *
- * Return: integer, length of string
- */
-int _strLen(char *s)
-{
-	int strL = 0;
-
-	while (*(s + strL))
-		strL++;
-	return (strL);
+	else
+	{
+		return (NULL);
+	}
 }
