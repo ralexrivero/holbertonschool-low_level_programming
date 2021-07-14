@@ -12,36 +12,50 @@
  */
 char *argstostr(int ac, char **av)
 {
-int i, j, k, len;
-char *str;
+	char *s, *t;
+	int x, y, z;
 
-if (ac == 0 || av == NULL)
-return (NULL);
+	if (ac == 0 || av == NULL)
+		return (0);
 
-for (i = 0; i < ac; i++)
-{
-for (j = 0; av[i][j] != '\0'; j++)
-len++;
-len++;
+	for (x = 0; x < ac; x++)
+	{
+		for (y = 0; av[x][y] != '\0'; y++, z++)
+			;
+		z++;
+	}
+	z++;
+
+	s = malloc(z * sizeof(char));
+
+	if (s == NULL)
+		return (0);
+
+	t = s;
+	for (x = 0; x < ac; x++)
+	{
+		for (y = 0; av[x][y] != '\0'; y++)
+		{
+			*s = av[x][y];
+			s++;
+		}
+		*s = '\n';
+		s++;
+	}
+	return (t);
 }
 
-str = malloc(sizeof(char) * (len + 1));
+/**
+ * _length - Length of a string
+ * @str: String
+ *
+ * Return: Length
+ **/
 
-if (str == NULL)
-return (NULL);
-
-k = 0;
-
-for (i = 0; i < ac; i++)
+int _length(char *str)
 {
-for (j = 0; av[i][j] != '\0'; j++)
-{
-str[k] = av[i][j];
-k++;
-}
-str[k] = '\n';
-k++;
-}
-
-return (str);
+	if (*str == '\0')
+		return (0);
+	else
+		return (1 + _length(str + 1));
 }
