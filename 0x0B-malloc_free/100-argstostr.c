@@ -4,40 +4,39 @@
 /**
  * argstostr - Creates a string from the concatenation of all the
  * arguments of a program
- * @ac: The number of arguments to the program
- * @av: The array of arguments to the program
- *
- * Return: The pointer to the string or NULL if memory allocation
- * fails or ac is 0 or av is NULL
+ * @ac: Number of arguments
+ * @av: The array of arguments
+ * Return: a pointer to a new string, or NULL if it fails
+ * Each argument should be followed by a \n in the new string
  */
 char *argstostr(int ac, char **av)
 {
 	int i, j;
 	char *str;
-	int len = 0;
+	int length = 0;
 
 	if (ac == 0 || av == NULL)
 		return (NULL);
 	for (i = 0; i < ac; i++)
 	{
 		for (j = 0; *(*(av + i) + j) != '\0'; j++)
-			len++;
+			length++;
 	}
-	str = malloc(sizeof(char) * (len + i + 1));
+	str = malloc(sizeof(char) * (length + i + 1));
 	if (str)
 	{
-		len = 0;
+		length = 0;
 		for (i = 0; i < ac; i++)
 		{
 			for (j = 0; *(*(av + i) + j) != '\0'; j++)
 			{
-				*(str + len) = *(*(av + i) + j);
-				len++;
+				*(str + length) = *(*(av + i) + j);
+				length++;
 			}
-			*(str + len) = '\n';
-			len++;
+			*(str + length) = '\n';
+			length++;
 		}
-		*(str + len) = '\0';
+		*(str + length) = '\0';
 		return (str);
 	}
 	else
