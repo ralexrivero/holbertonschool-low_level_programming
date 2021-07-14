@@ -1,6 +1,6 @@
 #include "holberton.h"
 #include <stdlib.h>
-
+#include <stdio.h>
 /**
  * argstostr - Creates a string from the concatenation of all the
  * arguments of a program
