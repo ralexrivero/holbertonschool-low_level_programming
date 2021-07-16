@@ -12,6 +12,7 @@ int main(int argc, char *argv[])
 {
 	unsigned long m;
 	int i, j;
+
 	if (argc != 3)
 	{ printf("Error\n");
 		exit(98); }
