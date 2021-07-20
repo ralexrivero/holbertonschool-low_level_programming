@@ -1,11 +1,10 @@
-# 0x0D. C - Preprocessor
+# 0x0E. C - Structures, typedef
 ## Learning Objectives
 
 ### General
 
--   What are macros and how to use them
--   What are the most common predefined macros
--   How to include guard your header files
+-   What are structures, when, why and how to use them
+-   How to use `typedef`
 
 
 ## Enviroment
@@ -20,7 +19,6 @@
 - OS: Ubuntu 20.04 LTS
 - Editor: VIM 8.1.2269
 - Compiler: gcc 9.3.0
-- gcc, using the options -Wall -Werror -Wextra -pedantic -std=gnu89
 Style guidelines: [Betty style](https://github.com/holbertonschool/Betty/wiki)
 
 ## Autor
@@ -34,4 +32,3 @@ Ronald Rivero
 <a href="https://www.linkedin.com/in/ronald-rivero/" target="_blank"> <img align="left" alt="Ronald Rivero | LinkedIn" width="22px" src="https://raw.githubusercontent.com/ralexrivero/xelar_theme_profile/main/icons/linkedin-brands_blue.svg" /> </a>
 <a href="mailto:ralexrivero@gmail.com?subject=Contact" target="_blank"><img align="left" width="22" src="https://raw.githubusercontent.com/ralexrivero/xelar_theme_profile/main/icons/envelope-regular_blue.svg" alt="email me"> </a>
 <br>
-
