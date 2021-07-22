@@ -3,7 +3,7 @@
  * array_iterator - the iterator
  * @array: the array
  * @size: the size
- * @action: one value 
+ * @action: one value
  */
 void array_iterator(int *array, size_t size, void (*action)(int))
 {
