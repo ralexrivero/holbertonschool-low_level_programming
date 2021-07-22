@@ -1,11 +1,11 @@
 #include <stdarg.h>
+#include <stdio.h>
 
 /**
  * print_numbers - print number, followed by a line
  * @separator: tokenize the string
  * @n: number of arguments pased to the function
  */
-
 void print_numbers(const char *separator, const unsigned int n, ...)
 {
 unsigned int i;
