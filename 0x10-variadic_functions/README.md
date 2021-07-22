@@ -20,8 +20,8 @@
 - OS: Ubuntu 20.04 LTS
 - Editor: VIM 8.1.2269
 - Compiler: gcc 9.3.0
--  Compiling options  `-Wall -Werror -Wextra -pedantic -std=gnu89`
-Style guidelines: [Betty style](https://github.com/holbertonschool/Betty/wiki)
+- Compiling options  `-Wall -Werror -Wextra -pedantic -std=gnu89`
+- Style guidelines: [Betty style](https://github.com/holbertonschool/Betty/wiki)
 
 ## Autor
 ```
