@@ -13,17 +13,17 @@ return (a + b);
 }
 
 /**
- * op_sub - calculates the difference 
+ * op_sub - calculates the difference
  * @a: first int
  * @b: second int
- * Return: difference of 
+ * Return: difference of
  */
 int op_sub(int a, int b)
 {
 return (a - b);
 }
 /**
- * op_mul - calculates the product 
+ * op_mul - calculates the product
  * @a: first integer
  * @b: second integer
  * Return: product of a and b

@@ -1,4 +1,3 @@
-nes (29 sloc) 560 Bytes
 #include "3-calc.h"
 
 /**
