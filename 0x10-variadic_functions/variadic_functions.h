@@ -9,4 +9,21 @@ void print_numbers(const char *separator, const unsigned int n, ...);
 void print_all(const char * const format, ...);
 int sum_them_all(const unsigned int n, ...);
 void print_strings(const char *separator, const unsigned int n, ...);
+
+/**
+ * struct tokenizer - tokenizer
+ *
+ * @pm: The parameters entered.
+ * @f: The base function.
+ */
+typedef struct tokenizer
+{
+	char *pm;
+	void (*f)(va_list p);
+} tokenizer_t;
+/* prototypes for print_all */
+void pac(va_list p);
+void pai(va_list p);
+void paf(va_list p);
+void pas(va_list p);
 #endif
