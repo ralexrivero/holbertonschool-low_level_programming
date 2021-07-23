@@ -8,45 +8,98 @@
  * string NULL print (nil)
  * 2 while, 2 if, 9 var and printf
  */
+
 void print_all(const char * const format, ...)
 {
-	int i = 0;
-	char *str, *sep = "";
+	va_list u;
+	char *separator = ", ";
+	int i = 0, j;
 
-	va_list list;
+	tokenizer_t op[] = {
+		{"c", pac},
+		{"i", pai},
+		{"f", paf},
+		{"s", pas},
+		{NULL, NULL}
+	};
 
-	va_start(list, format);
+	va_start(u, format);
 
-	if (format)
+	while (format && format[i])
 	{
-		while (format[i])
+		j = 0;
+		while (j < 4)
 		{
-			switch (format[i])
+			if (*(op[j].pm) == format[i])
 			{
-				case 'c':
-					printf("%s%c", sep, va_arg(list, int));
-					break;
-				case 'i':
-					printf("%s%d", sep, va_arg(list, int));
-					break;
-				case 'f':
-					printf("%s%f", sep, va_arg(list, double));
-					break;
-				case 's':
-					str = va_arg(list, char *);
-					if (!str)
-						str = "(nil)";
-					printf("%s%s", sep, str);
-					break;
-				default:
-					i++;
-					continue;
+				op[j].f(u);
+
+				if (format[i + 1])
+				{
+					printf("%s", separator);
+				}
 			}
-			sep = ", ";
-			i++;
+			j++;
 		}
+		i++;
+	}
+	printf("\n");
+	va_end(u);
+}
+
+
+/**
+ * pac - main for string
+ * @p: pointer to arg
+ * Description: print char
+ * Return: char to main
+ */
+
+void pac(va_list p)
+{
+	printf("%c", (char)va_arg(p, int));
+}
+
+/**
+ * pai - main int
+ * @p: pointer to arg
+ * Description: print int
+ * Return: the int
+ */
+
+void pai(va_list p)
+{
+	printf("%i", va_arg(p, int));
+}
+
+/**
+ * paf - main float
+ * @p: pointer to arg
+ * Description: print float
+ * Return: the float
+ */
+
+void paf(va_list p)
+{
+	printf("%f", (float)va_arg(p, double));
+}
+
+/**
+ * pas - main string
+ * @p: pointer to arg
+ * Description: This function prints a string.
+ * Return: Nothing.
+ */
+
+void pas(va_list p)
+{
+	char *container = va_arg(p, char*);
+
+	switch ((int)(!container))
+	case 1:
+	{
+		container = "(nil)";
 	}
 
-	printf("\n");
-	va_end(list);
+	printf("%s", container);
 }
