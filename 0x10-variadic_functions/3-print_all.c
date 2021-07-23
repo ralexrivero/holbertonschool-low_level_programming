@@ -8,16 +8,6 @@
  * string NULL print (nil)
  * 2 while, 2 if, 9 var and printf
  */
-#include "variadic_functions.h"
-
-/**
- * print_all - print anyting
- * @format: list of types of arguments
- * Description: lika printf
- * Return: the output formated in char, integer, float or char*
- * string NULL print (nil)
- * 2 while, 2 if, 9 var and printf
- */
 
 void print_all(const char * const format, ...)
 {
@@ -26,7 +16,7 @@ void print_all(const char * const format, ...)
 	int i = 0, j;
 
 	tokens_t op[] = {
-		{"c", pas},
+		{"c", pac},
 		{"i", pai},
 		{"f", paf},
 		{"s", pas},
@@ -59,13 +49,13 @@ void print_all(const char * const format, ...)
 
 
 /**
- * pas - main for string
+ * pac - main for string
  * @p: pointer to arg
  * Description: print char
  * Return: char to main
  */
 
-void pas(va_list p)
+void pac(va_list p)
 {
 	printf("%c", (char)va_arg(p, int));
 }
