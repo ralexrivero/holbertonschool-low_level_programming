@@ -8,6 +8,5 @@
 
 size_t print_listint(const listint_t *h)
 {
-
-	return ();
+	return(printf("%i",list_size(h)));
 }
