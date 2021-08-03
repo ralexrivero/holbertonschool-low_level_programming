@@ -4,7 +4,7 @@
  * add_nodeint - add node at list
  * Return: address of new element of NULL if fail
  * @head: first node in list
- * n: data to add
+ * @n: data to add
  */
 
 listint_t *add_nodeint(listint_t **head, const int n)
