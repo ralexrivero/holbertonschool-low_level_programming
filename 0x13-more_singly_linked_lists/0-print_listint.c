@@ -8,7 +8,7 @@
 
 size_t print_listint(const listint_t *h)
 {
-	int iterator = 0;
+	size_t iterator = 0;
 
 	if(!h)
 		return (0);
