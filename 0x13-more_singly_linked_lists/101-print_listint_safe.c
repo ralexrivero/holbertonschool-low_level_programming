@@ -2,6 +2,7 @@
 
 /**
  * print_listint_safe - print a list
+ * Description: prints list structure
  * Returns: number of nodes
  * Exit 98 if fails
  * @head: pointer to head
