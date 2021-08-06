@@ -8,21 +8,20 @@
 
 void print_binary(unsigned long int n)
 {
-	unsigned long int varUIn_decimal = n;
-	char varChr_binary[1024];
-	int i = 0;
 
-	if (varUIn_decimal == 0)
+	char varChr_binary;
+
+	if (n == 0)
 	{
 		_putchar('0');
 		return;
 	}
-	while (varUIn_decimal > 0)
+	if (n == 1)
 	{
-		varChr_binary[i] = (varUIn_decimal % 2) + '0';
-		varUIn_decimal /= 2;
-		i++;
+		_putchar('1');
+		return;
 	}
-	for (i = i - 1; i >= 0; i--)
-		_putchar(varChr_binary[i]);
+	print_binary(n >> 1);
+	varChr_binary = (n & 1) ? '1' : '0';
+	_putchar(varChr_binary);
 }
