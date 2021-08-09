@@ -2,11 +2,11 @@
 
 ## Learning Objectives
 
-  
+
 
 ### General
 
-  
+
 -   Look for the right source of information online
 -   How to create, open, close, read and write files
 -   What are file descriptors
@@ -17,7 +17,7 @@
 -   What is a system call
 -   What is the difference between a function and a system call
 
-  
+
 
 ## Environment
 
@@ -31,8 +31,8 @@
 
 </div>
 
-  
-  
+
+
 
 - Language: C
 
@@ -44,7 +44,7 @@
 
 Style guidelines: [Betty style](https://github.com/holbertonschool/Betty/wiki)
 
-  
+
 
 ## Autor
 
