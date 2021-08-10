@@ -1,11 +1,10 @@
-  #include "main.h"
-  /**
-  * read_textfile - reads a text file and prints in POSIX stdout
-  * Description: use i/o
-  * @filename: file to read
-  * @letters: number of letter it should read and print
-  * Return: actual number of letter it could read and print
-  */
+ #include "main.h"
+/**
+* read_textfile - reads a text file and prints in POSIX stdout
+* @filename: file to read
+* @letters: number of letter it should read and print
+* Return: actual number of letter it could read and print
+*/
 
 ssize_t read_textfile(const char *filename, size_t letters)
 {
