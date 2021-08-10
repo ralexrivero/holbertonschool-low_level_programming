@@ -1,6 +1,7 @@
   #include "main.h"
   /**
   * read_textfile - reads a text file and prints in POSIX stdout
+  * Description: use i/o
   * @filename: file to read
   * @letters: number of letter it should read and print
   * Return: actual number of letter it could read and print
