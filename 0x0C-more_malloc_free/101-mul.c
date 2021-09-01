@@ -28,5 +28,6 @@ int main(int argc, char *argv[])
 	}
 	m = atol(argv[1]) *  atol(argv[2]);
 	printf("%lu\n", m);
+	exit(EXIT_SUCCESS);
 	return (0);
 }
