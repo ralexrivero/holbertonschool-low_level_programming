@@ -23,7 +23,7 @@ int _strlen(char *str)
  */
 int main(int argc, char *argv[])
 {
-	int mul = 0, i = 0, j = 0, k = 0, m = 0, len1 = 0, len2 = 0, temp = 0;
+	int mul = 0, i = 0, j = 0, k = 0, len1 = 0, len2 = 0;
 	int *prod;
 
 /* control only two arguments passed */
