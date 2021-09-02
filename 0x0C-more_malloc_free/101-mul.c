@@ -59,16 +59,17 @@ printf("Error\n"), exit(98);
 		}
 	}
 /* print array */
-if (prod[0] == 0)
-i = 1;
+for (i = 0; prod[i] == 0 || !prod[i]; i++);
+if (i >= (len1 + len2))
+{
+_putchar(prod[len1 + len2 -1] + '0');
+}
 else
-i = 0;
 for (; i <= (len1 + len2 - 1); i++)
 {
 	_putchar(prod[i] + '0');
 }
 	_putchar('\n');
 	free(prod);
-	exit(EXIT_SUCCESS);
 	return (0);
 }
