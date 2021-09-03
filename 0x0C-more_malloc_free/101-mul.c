@@ -69,7 +69,10 @@ len2 = _strlen(argv[2]);
 /* allocate memory for product */
 prod = calloc((len1 + len2), sizeof(int *));
 if (prod == NULL)
-printf("Error\n"), exit(98);
+{
+	printf("Error\n"), free(prod), exit(98);
+}
+
 /* multiply arrays */
 	for (j = len2 - 1; j >= 0; j--)
 	{
@@ -83,5 +86,5 @@ printf("Error\n"), exit(98);
 /* print array */
 _print(prod, len1, len2);
 	free(prod);
-	return (0);
+	exit(EXIT_SUCCESS);
 }
