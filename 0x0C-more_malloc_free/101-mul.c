@@ -13,20 +13,6 @@ int _strlen(char *str)
 	return (len);
 }
 /**
- * _putser - custom function to print a string of chars in standard error
- * @string: pointer to the string to be printed
- * Return: the string to print
- */
-
-int _putser(char *string)
-{
-	/* variable to save the length of the string */
-	int length = 0;
-
-	length = _strlen(string);
-	return (write(2, string, length));
-}
-/**
  * _print - print array
  * @prod: pointer to array to be printed
  * @len1: lenght of array 1
@@ -62,20 +48,6 @@ void _perrear(void)
 	exit(98);
 }
 /**
- * _setarzero - set array to 0
- * 
- * @arr: the array to set
- * Return: pointer to char seted to 0
- */
-int _setarzero(int *arr)
-{
-	int i = 0;
-	
-	for (; (arr + i) != NULL; i++)
-	arr[i] = '0';
-	return(arr);
-}
-/**
  * main - multiplies two positive numbers
  * @argc: n arguments
  * @argv: args
@@ -107,7 +79,8 @@ if (prod == NULL)
 	_perrear();
 }
 /* set array to 0 */
-_setarzero(prod);
+for (i = 0; prod[i] == '\0'; i++)
+prod[i] = 0;
 /* multiply arrays */
 	for (j = len2 - 1; j >= 0; j--)
 	{
