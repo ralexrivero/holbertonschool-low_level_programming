@@ -62,6 +62,20 @@ void _perrear(void)
 	exit(98);
 }
 /**
+ * _setarzero - set array to 0
+ * 
+ * @arr: the array to set
+ * Return: pointer to char seted to 0
+ */
+int _setarzero(int *arr)
+{
+	int i = 0;
+	
+	for (; (arr + i) != NULL; i++)
+	arr[i] = '0';
+	return(arr);
+}
+/**
  * main - multiplies two positive numbers
  * @argc: n arguments
  * @argv: args
@@ -86,12 +100,14 @@ int main(int argc, char *argv[])
 len1 = _strlen(argv[1]);
 len2 = _strlen(argv[2]);
 /* allocate memory for product */
-prod = calloc((len1 + len2), sizeof(int *));
+prod = malloc(sizeof(int *) * (len1 + len2));
 if (prod == NULL)
 {
 	free(prod);
 	_perrear();
 }
+/* set array to 0 */
+_setarzero(prod);
 /* multiply arrays */
 	for (j = len2 - 1; j >= 0; j--)
 	{
