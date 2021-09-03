@@ -105,5 +105,5 @@ if (prod == NULL)
 /* print array */
 _print(prod, len1, len2);
 	free(prod);
-	exit(EXIT_SUCCESS);
+	return (0);
 }
