@@ -13,18 +13,18 @@ int _strlen(char *str)
 	return (len);
 }
 /**
- * _puts - custom function to print a string of chars in stdo
+ * _putser - custom function to print a string of chars in standard error
  * @string: pointer to the string to be printed
  * Return: the string to print
  */
 
-int _puts(char *string)
+int _putser(char *string)
 {
 	/* variable to save the length of the string */
 	int length = 0;
 
 	length = _strlen(string);
-	return (write(1, string, length));
+	return (write(2, string, length));
 }
 /**
  * _print - print array
@@ -59,19 +59,17 @@ for (; i <= (len1 + len2 - 1); i++)
  */
 int main(int argc, char *argv[])
 {
-	int mul = 0, i = 0, j = 0, k = 0, len1 = 0, len2 = 0;
-	int *prod;
+	int mul = 0, i = 0, j = 0, k = 0, len1 = 0, len2 = 0, *prod;
 /* control only two arguments passed */
 	if (argc != 3)
-	{ _puts("Error\n");
-		exit(98); }
+	_putser("Error\n"), exit(98);
 /* check if the characters are all numbers */
 	for (i = 1; i < argc; i++)
 	{
 		for (j = 0; argv[i][j] != '\0'; j++)
 		{
 			if (argv[i][j] > 57 || argv[i][j] < 48)
-			_puts("Error\n"), exit(98);
+			_putser("Error\n"), exit(98);
 		}
 	}
 /* obtain lenght of the two strings */
@@ -81,9 +79,10 @@ len2 = _strlen(argv[2]);
 prod = calloc((len1 + len2), sizeof(int *));
 if (prod == NULL)
 {
-	_puts("Error\n"), free(prod), exit(98);
+	free(prod);
+	_putser("Error\n");
+	exit(98);
 }
-
 /* multiply arrays */
 	for (j = len2 - 1; j >= 0; j--)
 	{
