@@ -51,6 +51,16 @@ for (; i <= (len1 + len2 - 1); i++)
 	_putchar('\n');
 	return (0);
 }
+
+/**
+ * _perrear - prints error message and exits with status 98
+ * Return: a lot of flow yeah
+ */
+void _perrear(void)
+{
+	write(2, "Error\n", 6);
+	exit(98);
+}
 /**
  * main - multiplies two positive numbers
  * @argc: n arguments
@@ -62,14 +72,14 @@ int main(int argc, char *argv[])
 	int mul = 0, i = 0, j = 0, k = 0, len1 = 0, len2 = 0, *prod;
 /* control only two arguments passed */
 	if (argc != 3)
-	_putser("Error\n"), exit(98);
+	_perrear();
 /* check if the characters are all numbers */
 	for (i = 1; i < argc; i++)
 	{
 		for (j = 0; argv[i][j] != '\0'; j++)
 		{
 			if (argv[i][j] > 57 || argv[i][j] < 48)
-			_putser("Error\n"), exit(98);
+			_perrear();
 		}
 	}
 /* obtain lenght of the two strings */
@@ -80,8 +90,7 @@ prod = calloc((len1 + len2), sizeof(int *));
 if (prod == NULL)
 {
 	free(prod);
-	_putser("Error\n");
-	exit(98);
+	_perrear();
 }
 /* multiply arrays */
 	for (j = len2 - 1; j >= 0; j--)
