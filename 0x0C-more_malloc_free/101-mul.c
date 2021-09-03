@@ -1,7 +1,4 @@
-#include <stdio.h>
-#include <stdlib.h>
 #include "holberton.h"
-
 /**
  * _strlen - string lenght
  * @str: pointer to character to be measured
@@ -14,6 +11,20 @@ int _strlen(char *str)
 	while (*(str + len) != '\0')
 		len++;
 	return (len);
+}
+/**
+ * _puts - custom function to print a string of chars in stdo
+ * @string: pointer to the string to be printed
+ * Return: the string to print
+ */
+
+int _puts(char *string)
+{
+	/* variable to save the length of the string */
+	int length = 0;
+
+	length = _strlen(string);
+	return (write(1, string, length));
 }
 /**
  * _print - print array
@@ -52,7 +63,7 @@ int main(int argc, char *argv[])
 	int *prod;
 /* control only two arguments passed */
 	if (argc != 3)
-	{ printf("Error\n");
+	{ _puts("Error\n");
 		exit(98); }
 /* check if the characters are all numbers */
 	for (i = 1; i < argc; i++)
@@ -60,7 +71,7 @@ int main(int argc, char *argv[])
 		for (j = 0; argv[i][j] != '\0'; j++)
 		{
 			if (argv[i][j] > 57 || argv[i][j] < 48)
-			printf("Error\n"), exit(98);
+			_puts("Error\n"), exit(98);
 		}
 	}
 /* obtain lenght of the two strings */
@@ -70,7 +81,7 @@ len2 = _strlen(argv[2]);
 prod = calloc((len1 + len2), sizeof(int *));
 if (prod == NULL)
 {
-	printf("Error\n"), free(prod), exit(98);
+	_puts("Error\n"), free(prod), exit(98);
 }
 
 /* multiply arrays */
