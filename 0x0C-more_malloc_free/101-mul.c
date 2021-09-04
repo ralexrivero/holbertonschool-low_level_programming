@@ -44,8 +44,7 @@ for (; i <= (len1 + len2 - 1); i++)
  */
 void _perrear(void)
 {
-	write(2, "Error\n", 6);
-	exit(98);
+	write(2, "Error\n", 6),	exit(98);
 }
 /**
  * main - multiplies two positive numbers
@@ -79,8 +78,10 @@ if (prod == NULL)
 	_perrear();
 }
 /* set array to 0 */
-for (i = 0; prod[i] == '\0'; i++)
-prod[i] = 0;
+for (i = 0; i < (len1 + len2); i++)
+{
+	prod[i] = 0;
+}
 /* multiply arrays */
 	for (j = len2 - 1; j >= 0; j--)
 	{
