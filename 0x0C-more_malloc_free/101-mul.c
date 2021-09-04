@@ -74,8 +74,7 @@ len2 = _strlen(argv[2]);
 prod = malloc(sizeof(int *) * (len1 + len2));
 if (prod == NULL)
 {
-	free(prod);
-	_perrear();
+	free(prod), _perrear();
 }
 /* set array to 0 */
 for (i = 0; i < (len1 + len2); i++)
@@ -93,7 +92,6 @@ for (i = 0; i < (len1 + len2); i++)
 		}
 	}
 /* print array */
-_print(prod, len1, len2);
-	free(prod);
-	return (0);
+_print(prod, len1, len2), free(prod);
+return (0);
 }
