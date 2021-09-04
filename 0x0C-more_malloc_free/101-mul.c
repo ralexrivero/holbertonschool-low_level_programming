@@ -50,10 +50,10 @@ void _perrear(void)
 /**
  * main - multiplies two positive numbers
  * @argc: n arguments
- * @argv: args
+ * @argv: argument pointer
  * Return: int
  */
-int main(int argc, char *argv[])
+int main(int argc, char **argv)
 {
 	int mul = 0, i = 0, j = 0, k = 0, len1 = 0, len2 = 0, *prod;
 /* control only two arguments passed */
