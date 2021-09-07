@@ -71,7 +71,7 @@ int main(int argc, char **argv)
 len1 = _strlen(argv[1]);
 len2 = _strlen(argv[2]);
 /* allocate memory for product */
-prod = malloc(sizeof(int *) * (len1 + len2));
+prod = malloc(sizeof(int) * (len1 + len2));
 if (prod == NULL)
 {
 	free(prod), _perrear();
