@@ -44,7 +44,7 @@ for (; i <= (len1 + len2 - 1); i++)
  */
 void _perrear(void)
 {
-	write(2, "Error\n", 6), exit(98);
+	write(1, "Error\n", 6), exit(98);
 }
 /**
  * main - multiplies two positive numbers
