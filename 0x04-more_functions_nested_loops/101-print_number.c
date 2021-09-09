@@ -7,20 +7,33 @@
  */
 void print_number(int n)
 {
-unsigned int x;
+unsigned int digits, n_d, i, power, n_obo;
 
-if (n < 0)
+if (n < 0) /* Put a - sign and change number to positive */
 {
-x = -n;
-_putchar('-');
+	_putchar('-');
+	n = -n;
 }
-else
+digits = 0; /* count digits of n */
+n_d = n;
+while (n_d > 0)
 {
-x = n;
+n_d = n_d / 10;
+digits++;
 }
-if (x / 10)
+if (digits == 0)
 {
-print_number(x / 10);
+	digits = 1;
 }
-_putchar((x % 10) + '0');
+while (digits > 0)
+{ /* power of ten according to number of digits*/
+power = 1;
+for (i = 1; i <= (digits - 1); i++)
+{
+power = (power * 10);
+}
+--digits;
+n_obo = (n / power) % 10;
+_putchar(n_obo + '0');
+}
 }
