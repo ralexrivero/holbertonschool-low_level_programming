@@ -6,6 +6,7 @@
  * Returns: number of nodes
  * Exit 98 if fails
  * @head: pointer to head
+ * Return: the number of nodes in the list
  */
 
 size_t print_listint_safe(const listint_t *head)
