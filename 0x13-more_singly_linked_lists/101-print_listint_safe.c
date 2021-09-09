@@ -11,16 +11,15 @@
 
 size_t print_listint_safe(const listint_t *head)
 {
-
-	size_t nodes_qnt = 0;
-	long int buffer;
+	size_t nodes_qt = 0;
+	long int diff;
 
 	while (head)
 	{
-		buffer = head - head->next;
-		nodes_qnt++;
+		diff = head - head->next;
+		nodes_qt++;
 		printf("[%p] %d\n", (void *)head, head->n);
-		if (buffer > 0)
+		if (diff > 0)
 			head = head->next;
 		else
 		{
@@ -29,5 +28,5 @@ size_t print_listint_safe(const listint_t *head)
 		}
 	}
 
-	return (nodes_qnt);
+	return (nodes_qt);
 }
