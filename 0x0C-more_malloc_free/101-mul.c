@@ -22,9 +22,10 @@ int _strlen(char *str)
 int _print(int *prod, int len1, int len2)
 {
 	int i = 0;
-
+/* only print one zero if are many or empty */
 for (i = 0; prod[i] == 0 || !prod[i]; i++)
 ;
+/* print all starting after the last left zero */
 if (i >= (len1 + len2))
 {
 _putchar(prod[len1 + len2 - 1] + '0');
@@ -44,7 +45,8 @@ for (; i <= (len1 + len2 - 1); i++)
  */
 void _perrear(void)
 {
-	write(1, "Error\n", 6), exit(98);
+	write(1, "Error\n", 6);
+	exit(98);
 }
 /**
  * main - multiplies two positive numbers
@@ -92,6 +94,8 @@ for (i = 0; i < (len1 + len2); i++)
 		}
 	}
 /* print array */
-_print(prod, len1, len2), free(prod);
-return (0);
+_print(prod, len1, len2);
+/* free */
+free(prod);
+exit(EXIT_SUCCESS);
 }
