@@ -44,7 +44,7 @@ for (; i <= (len1 + len2 - 1); i++)
  */
 void _perrear(void)
 {
-	write(2, "Error\n", 6), exit(98);
+	write(1, "Error\n", 6), exit(98);
 }
 /**
  * main - multiplies two positive numbers
@@ -71,7 +71,7 @@ int main(int argc, char **argv)
 len1 = _strlen(argv[1]);
 len2 = _strlen(argv[2]);
 /* allocate memory for product */
-prod = malloc(sizeof(int *) * (len1 + len2));
+prod = malloc(sizeof(int) * (len1 + len2));
 if (prod == NULL)
 {
 	free(prod), _perrear();

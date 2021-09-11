@@ -3,27 +3,43 @@
  * main - first 98 Fibonacci numbers
  * Descriptions: starting with 1 and 2, newline
  * Return: zero when done
- * type: unsigned long int - only suppor the firs 93 values of 98
- * reached the maximum value: 12200160415121876738
- * expected value:
- * https://www.linkedin.com/in/ronald-rivero/
- * Twitter: @ralex_uy
  */
-
 int main(void)
 {
-	long double i_loop, fa, fb;
+	int i;
+	unsigned long fib1 = 0, fib2 = 1, add;
+	unsigned long fib1_half1, fib1_half2, fib2_half1, fib2_half2;
+	unsigned long half1, half2;
 
-	fa = 1;
-	fb = 2;
-	printf("%.0Lf, ", fa);
-	for (i_loop = 0; i_loop <= 95; i_loop++)
+	for (i = 0; i < 92; i++)
 	{
-		fb = fb + fa;
-		fa = fb - fa;
-		printf("%.0Lf, ", fb);
+		add = fib1 + fib2;
+		printf("%lu, ", add);
+
+		fib1 = fib2;
+		fib2 = add;
 	}
-	fb = fb + fa;
-	printf("%.0Lf\n", fb);
+	fib1_half1 = fib1 / 10000000000;
+	fib2_half1 = fib2 / 10000000000;
+	fib1_half2 = fib1 % 10000000000;
+	fib2_half2 = fib2 % 10000000000;
+	for (i = 93; i < 99; i++)
+	{
+		half1 = fib1_half1 + fib2_half1;
+		half2 = fib1_half2 + fib2_half2;
+		if (fib1_half2 + fib2_half2 > 9999999999)
+		{
+			half1 += 1;
+			half2 %= 10000000000;
+		}
+		printf("%lu%lu", half1, half2);
+		if (i != 98)
+			printf(", ");
+		fib1_half1 = fib2_half1;
+		fib1_half2 = fib2_half2;
+		fib2_half1 = half1;
+		fib2_half2 = half2;
+	}
+	printf("\n");
 	return (0);
 }
