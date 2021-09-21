@@ -1,16 +1,6 @@
 # 0x18
 
 #executables
-a.out
-a.exe
-a
-b
-c
-d
-e
-f
-g
-liball.so
 
 # Prerequisites
 *.d
@@ -38,7 +28,6 @@ liball.so
 
 # Shared objects (inc. Windows DLLs)
 *.dll
-*.so.*
 *.dylib
 
 # Executables
