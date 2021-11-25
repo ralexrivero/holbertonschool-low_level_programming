@@ -4,7 +4,7 @@
 #variables
 
 CC = gcc
-SRC = holberton.c main.c
+SRC = school.c main.c
 OBJ = $(patsubst %.c, %.o, $(SRC))
 NAME = school
 RM = rm -f
