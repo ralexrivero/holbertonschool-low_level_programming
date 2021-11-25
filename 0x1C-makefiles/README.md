@@ -41,10 +41,24 @@
 
 ## How to
 
-run the following command in the terminal:
+> run the following command in the terminal:
 
 ```bash
 make -f Makefile_name
+```
+
+> call an specific target
+
+```bash
+make all -f 3-Makefile
+make all -f 3-Makefile
+gcc  holberton.o  main.o -o school
+```
+
+```bash
+make oclean -f 3-Makefile
+make oclean -f 3-Makefile
+rm -f  holberton.o  main.o
 ```
 
 ### example

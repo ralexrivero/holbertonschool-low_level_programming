@@ -1,0 +1,30 @@
+#target all
+#rm -f ignore nonexisting files and arguments
+
+#variables
+
+CC = gcc
+SRC = holberton.c main.c
+OBJ = $(patsubst %.c, %.o, $(SRC))
+NAME = school
+RM = rm -f
+
+#compilation target
+
+#compile all updated sources
+all: $(OBJ)
+	$(CC) $(OBJ) -o $(NAME)
+
+#clean emacs and VI temp files along executable
+clean:
+	$(RM) *.swp *~ $(NAME)
+
+#clean object files
+oclean:
+	$(RM) $(OBJ)
+
+#clean all
+flcean: clean oclean
+
+#recompile all
+re: oclean all
