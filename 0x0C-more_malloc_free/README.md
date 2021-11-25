@@ -1,19 +1,19 @@
 # 0x0BC C - malloc, free
+
 ## Learning Objectives
 
 ### General
 
--   How to use the `exit` function
--   What are the functions `calloc` and `realloc` from the standard library and how to use them
-
+- How to use the `exit` function
+- What are the functions `calloc` and `realloc` from the standard library and how to use them
 
 ## Enviroment
+
 <div >
   <a href="https://www.cprogramming.com/" target="_blank"><img height="48px" src="https://raw.githubusercontent.com/ralexrivero/xelar_theme_profile/main/icons/language_c-programming.svg" alt="C programming language" ></a>
   <a href="https://ubuntu.com/" target="_blank"><img height="48px" src="https://raw.githubusercontent.com/ralexrivero/xelar_theme_profile/main/icons/ubuntu-icon.svg" alt="C programming language"></a>
     <a href="https://www.vim.org/" target="_blank"><img height="48px" src="https://raw.githubusercontent.com/ralexrivero/xelar_theme_profile/main/icons/Vimlogo.svg" alt="C programming language"></a>
 </div>
-
 
 - Language: C
 - OS: Ubuntu 20.04 LTS
@@ -22,10 +22,11 @@
 Style guidelines: [Betty style](https://github.com/holbertonschool/Betty/wiki)
 
 ## Autor
-```
-Ronald Rivero
-```
-### Connect me!
+
+```Ronald Rivero```
+
+### Connect
+
 <br>
 <a href ="https://discord.gg/4QNsYMAa4t" target="_blank" rel="noreferrer noopener"> <img align="left" src="https://raw.githubusercontent.com/ralexrivero/xelar_theme_profile/main/icons/discord-brands_blue.svg" alt="Ronald Rivero | Discord" width="22px"> </a>
 <a href="https://twitter.com/ralex_uy" target="_blank"> <img align="left" alt="Ronald Rivero | Twitter" width="22px" src="https://raw.githubusercontent.com/ralexrivero/xelar_theme_profile/main/icons/twitter-square-brands_blue.svg" /> </a>

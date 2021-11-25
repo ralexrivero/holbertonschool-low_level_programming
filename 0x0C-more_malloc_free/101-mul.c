@@ -78,12 +78,10 @@ if (prod == NULL)
 {
 	free(prod), _perrear();
 }
-/* set array to 0 */
 for (i = 0; i < (len1 + len2); i++)
 {
 	prod[i] = 0;
 }
-/* multiply arrays */
 	for (j = len2 - 1; j >= 0; j--)
 	{
 		for (k = len1 - 1; k >= 0; k--)
@@ -93,9 +91,7 @@ for (i = 0; i < (len1 + len2); i++)
 			prod[j + k] += mul / 10;
 		}
 	}
-/* print array */
 _print(prod, len1, len2);
-/* free */
 free(prod);
 exit(EXIT_SUCCESS);
 }
