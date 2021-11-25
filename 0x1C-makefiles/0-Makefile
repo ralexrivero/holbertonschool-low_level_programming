@@ -1,2 +1,3 @@
+# this target compile all the files
 all:
 	gcc main.c m.h holberton.c -o school

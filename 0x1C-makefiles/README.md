@@ -36,6 +36,14 @@
 
 ## How to
 
+run the following command in the terminal:
+
+```bash
+make -f Makefile_name
+```
+
+### example
+
 ```bash
 $ make -f 0-Makefile
 gcc main.c school.c -o school

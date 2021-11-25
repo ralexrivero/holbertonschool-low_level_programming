@@ -1,0 +1,5 @@
+# compile all the files
+CC = gcc
+SRC = *.c
+all:
+	$(CC) $(SRC) m.h -o school
