@@ -6,7 +6,7 @@ returns the perimeter of the island described in grid
 
 def island_perimeter(grid):
     """
-    returns the perimeter of the island described in grid
+    count adyacent free sides
     """
     count = 0
     if grid is None:
