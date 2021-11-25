@@ -27,4 +27,4 @@ oclean:
 flcean: clean oclean
 
 #recompile all
-re: oclean all
+re: fclean all
