@@ -10,8 +10,8 @@ CFLAGS = -Wall -Werror -Wextra -pedantic
 #compilation
 
 #compilation from updated sources
-all: $(OBJ)
-	$(CC) $(CFLAGS) $(OBJ) -o $(NAME)
+all: $(OBJ) m.h
+	$(CC) $(OBJ) -o $(NAME)
 
 #delete temporary files
 clean:
