@@ -4,7 +4,6 @@ CC = gcc
 SRC = school.c main.c
 OBJ = $(patsubst %.c, %.o, $(SRC))
 NAME = school
-RM = rm -f
 CFLAGS = -Wall -Werror -Wextra -pedantic
 
 #compilation
