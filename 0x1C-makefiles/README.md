@@ -34,6 +34,10 @@
 * ```make```: GNU Make 4.2.1
 * Style guidelines: [Betty style](https://github.com/holbertonschool/Betty/wiki)
 
+## help
+
+[wildcard function](https://www.gnu.org/software/make/manual/html_node/Wildcard-Function.html)
+
 ## How to
 
 run the following command in the terminal:
