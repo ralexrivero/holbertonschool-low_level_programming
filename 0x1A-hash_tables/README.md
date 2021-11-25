@@ -14,11 +14,9 @@
 ## Environment
 
 <div>
-
 <a  href="https://www.cprogramming.com/"  target="_blank"><img  height="48px"  src="https://raw.githubusercontent.com/ralexrivero/xelar_theme_profile/main/icons/language_c-programming.svg"  alt="C programming language"  ></a>
 <a  href="https://ubuntu.com/"  target="_blank"><img  height="48px"  src="https://raw.githubusercontent.com/ralexrivero/xelar_theme_profile/main/icons/ubuntu-icon.svg"  alt="C programming language"></a>
 <a  href="https://www.vim.org/"  target="_blank"><img  height="48px"  src="https://raw.githubusercontent.com/ralexrivero/xelar_theme_profile/main/icons/Vimlogo.svg"  alt="C programming language"></a>
-
 </div>
 
 - Language: C
