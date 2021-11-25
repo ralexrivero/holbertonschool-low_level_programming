@@ -5,6 +5,7 @@ SRC = school.c main.c
 OBJ = $(patsubst %.c, %.o, $(SRC))
 NAME = school
 CFLAGS = -Wall -Werror -Wextra -pedantic
+.PHONY: all clean oclean fclean re
 
 #compilation
 
