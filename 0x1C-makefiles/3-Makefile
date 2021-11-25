@@ -24,7 +24,7 @@ oclean:
 	$(RM) $(OBJ)
 
 #clean all
-flcean: clean oclean
+fclean: clean oclean
 
 #recompile all
 re: fclean all
