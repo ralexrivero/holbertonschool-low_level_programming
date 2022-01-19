@@ -1,13 +1,18 @@
 # makefile
 # variables
 CC = gcc
-SRC =
 RM = rm -f
 CFLAGS = -Wall -Wextra -Werror -pedantic -std=gnu89
 
+# clean output files
+
+fclean:
+	$(RM) 0-linear 1-binary 100-jump 102-interpolation 103-exponential 104-advanced_binary 105-jump
+
 # compilation
-clean:
-%: $(CC) $(CFLAGS) $(SRC)
+
+%:
+	$(CC) $(CFLAGS) $(SRC)
 
 0: SRC=main_files/$*-main.c 0-linear.c -o 0-linear
 
@@ -22,5 +27,3 @@ clean:
 104: SRC=main_files/$*-main.c 104-advanced_binary.c -o 104-advanced_binary
 
 105: SRC=main_files/$*-main.c 105-jump_list.c listint/*.c -lm -o 105-jump
-
-fclean: $(RM) 0-linear 1-binary 100-jump 102-interpolation 103-exponential 104-advanced_binary 105-jump
