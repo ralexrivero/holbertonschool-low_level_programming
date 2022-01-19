@@ -34,7 +34,7 @@
   * flags: ``-Wall -Werror -Wextra -pedantic -std=gnu89``
 * Shell: Bash
 * Style guideliness: ```Betty``` [https://github.com/holbertonschool/Betty](https://github.com/holbertonschool/Betty)
-* ``MAKEFILE``
+* ``make`` GNU Make 4.2.1
 
 ```bash
 hms$ betty -r *.c *.h
