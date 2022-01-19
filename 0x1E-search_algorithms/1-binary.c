@@ -14,6 +14,10 @@
 
 int binary_search(int *array, size_t size, int value)
 {
-	
+	unsigned int ini = 0, half = 0, end = 0;
+
+	if (array == NULL)
+		return (-1);
+
 	return (-1);
 }
