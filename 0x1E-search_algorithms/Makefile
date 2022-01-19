@@ -3,11 +3,16 @@
 CC = gcc
 RM = rm -f
 CFLAGS = -Wall -Wextra -Werror -pedantic -std=gnu89
-
+STYLE = betty -r
 # clean output files
 
 fclean:
 	$(RM) 0-linear 1-binary 100-jump 102-interpolation 103-exponential 104-advanced_binary 105-jump
+
+# betty style
+
+betty:
+	$(STYLE) *.h *.c
 
 # compilation
 

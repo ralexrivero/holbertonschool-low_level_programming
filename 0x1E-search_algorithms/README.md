@@ -35,9 +35,18 @@
 * Shell: Bash
 * Style guideliness: ```Betty``` [https://github.com/holbertonschool/Betty](https://github.com/holbertonschool/Betty)
 * ``make`` GNU Make 4.2.1
+  * 0: linear
+  * 1: binary
+  * 100: jump
+  * 102: interpolation
+  * 103: exponential
+  * 104: advanced_binary
+  * 105: jump
+  * fclean : clean executable outputs
+  * betty: style for .h and .c files recursively
 
 ```bash
-hms$ betty -r *.c *.h
+vagrant@ubuntu-focal:~/$ betty -r *.c *.h
 
 ========== -r ==========
 main
