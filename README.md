@@ -1,42 +1,43 @@
 
-# C Programing
-## Objetives learning
-### General
+# Low level programming
+<!-- Ansi shadow -->
+```bash
+██       ██████  ██     ██     ██      ███████ ██    ██ ███████ ██ 
+██      ██    ██ ██     ██     ██      ██      ██    ██ ██      ██ 
+██      ██    ██ ██  █  ██     ██      █████   ██    ██ █████   ██ 
+██      ██    ██ ██ ███ ██     ██      ██       ██  ██  ██      ██ 
+███████  ██████   ███ ███      ███████ ███████   ████   ███████ ███████ 
+```
 
-* Why C programming is awesome Who invented C
-* Who are Dennis Ritchie, Brian Kernighan and Linus Torvalds
-* What happens when you type gcc main.c
-* What is an entry point
-* What is main
-* How to print text using printf, puts and putchar
-* How to get the size of a specific type using the unary operator sizeof
-* How to compile using gcc
-* What is the default program name when compiling with gcc
-* What is the official Holberton C coding style and how to check your code with betty-style
-* How to find the right header to include in your source code when using a standard library function
-* How does the main function influence the return value of the program
+* Low level programming fundamental in C programming language
 
 ---
 
-## Enviroment
+<!-- ubuntu -->
+[![Ubuntu](https://img.shields.io/static/v1?label=&message=Ubuntu&color=E95420&logo=Ubuntu&logoColor=E95420&labelColor=2F333A)](https://ubuntu.com/) <!-- vagrant -->
+[![Vagrant](https://img.shields.io/static/v1?label=&message=Vagrant&color=1868F2&logo=vagrant&labelColor=2F333A)](https://app.vagrantup.com/) <!-- bash -->
+[![Bash](https://img.shields.io/static/v1?label=&message=GNU%20Bash&color=4EAA25&logo=GNU%20Bash&logoColor=4EAA25&labelColor=2F333A)](https://www.gnu.org/software/bash/) <!-- vim -->
+[![Vim](https://img.shields.io/static/v1?label=&message=Vim&color=019733&logo=Vim&logoColor=019733&labelColor=2F333A)](https://www.vim.org/) <!-- vs code -->
+[![VS Code](https://img.shields.io/static/v1?label=&message=Visual%20Studio%20Code&color=5C2D91&logo=Visual%20Studio%20Code&logoColor=5C2D91&labelColor=2F333A)](https://code.visualstudio.com/) <!-- c -->
+[![C](https://img.shields.io/static/v1?label=&message=C%20Language&color=5C6BC0&logo=c&logoColor=A8B9CC&labelColor=2F333A)](https://www.cprogramming.com/)
 
-<div > <a href="https://www.gnu.org/software/bash/" target="_blank"> <img height="36px" src="https://raw.githubusercontent.com/ralexrivero/xelar_theme_profile/main/icons/terminal.svg" alt="terminal"></a>
-  <!-- C --> <a href="https://www.cprogramming.com/"><img height="36 px" src="https://raw.githubusercontent.com/ralexrivero/xelar_theme_profile/main/icons/language_c-programming.svg" alt="C programming language"></a>
-</div>
+* Editors: ``vim``, ``VS Code``
+* OS: ``Ubuntu`` 20.04 LTS
+* Vagrant ubuntu/focal64
+* Compiler: ``gcc`` 9.3.0
+  * flags: ``-Wall -Werror -Wextra -pedantic -std=gnu89``
+* Shell: Bash
+* Style guideliness: ```Betty``` [https://github.com/holbertonschool/Betty](https://github.com/holbertonschool/Betty)
+* ``make`` GNU Make 4.2.1
 
-- Language: C
-- OS: Ubuntu 20.04 LTS
-- Compiler: gcc 9.3.0
-Style guidelines: [Betty style](https://github.com/holbertonschool/Betty/wiki)
+* Language: C
+* OS: Ubuntu 20.04 LTS
+* Compiler: gcc 9.3.0
+* Style guidelines: [Betty style](https://github.com/holbertonschool/Betty/wiki)
 
-## Autor
-```
-Ronald Rivero
-```
-### Connect me!
-<br>
-<a href ="https://discord.gg/4QNsYMAa4t" target="_blank" rel="noreferrer noopener"> <img align="left" src="https://raw.githubusercontent.com/ralexrivero/xelar_theme_profile/main/icons/discord-brands_blue.svg" alt="Ronald Rivero | Discord" width="22px"> </a>
-<a href="https://twitter.com/ralex_uy" target="_blank"> <img align="left" alt="Ronald Rivero | Twitter" width="22px" src="https://raw.githubusercontent.com/ralexrivero/xelar_theme_profile/main/icons/twitter-square-brands_blue.svg" /> </a>
-<a href="https://www.linkedin.com/in/ronald-rivero/" target="_blank"> <img align="left" alt="Ronald Rivero | LinkedIn" width="22px" src="https://raw.githubusercontent.com/ralexrivero/xelar_theme_profile/main/icons/linkedin-brands_blue.svg" /> </a>
-<a href="mailto:ralexrivero@gmail.com?subject=Contact" target="_blank"><img align="left" width="22" src="https://raw.githubusercontent.com/ralexrivero/xelar_theme_profile/main/icons/envelope-regular_blue.svg" alt="email me"> </a>
-<br>
+## Author
+
+> Ronald Rivero
+
+<!-- twitter -->
+[![Twitter](https://img.shields.io/twitter/follow/ralex_uy?style=social)](https://twitter.com/ralex_uy) <!-- linkedin --> [![Linkedin](https://img.shields.io/badge/LinkedIn-+21K-blue?style=social&logo=linkedin)](https://www.linkedin.com/in/ronald-rivero/) <!-- github --> [![Github](https://img.shields.io/github/followers/ralexrivero?style=social)](https://github.com/ralexrivero/) <!-- vagrant --> [![Vagrant](https://img.shields.io/static/v1?label=&message=Vagrant%20Profile&color=1868F2&logo=vagrant&labelColor=2F333A)](https://app.vagrantup.com/ralexrivero) <!-- docker --> [![Docker](https://img.shields.io/static/v1?label=&message=Docker%20Profile&color=2496ED&logo=Docker&labelColor=2F333A)](https://hub.docker.com/u/ralexrivero)
