@@ -1,45 +1,5 @@
 #include "search_algos.h"
 
-
-/**
- * binary_recursion - Construct a new binary recursion object
- *
- * @array:
- * @left:
- * @right:
- * @value:
- *
- * Return:
- */
-
-int binary_recursion(int *array, unsigned int left, unsigned int right, int value)
-{
-	unsigned int half = 0;
-
-	half = right / 2;
-
-	while (left < right)
-	{
-		if (value == *(array + half))
-		{
-			return (half);
-		}
-		else if (value < * (array + half))
-		{
-			/* left */
-			right = half;
-			return (binary_recursion(array, left, right, value));
-		}
-		else
-		{
-			/* right */
-			left = half;
-			return (binary_recursion(array, left, right, value));
-		}
-	}
-	return (-1);
-}
-
 /**
  * binary_search - binary search algorithm in a sorted array in ascending order
  *
@@ -54,12 +14,37 @@ int binary_recursion(int *array, unsigned int left, unsigned int right, int valu
 
 int binary_search(int *array, size_t size, int value)
 {
-	unsigned int left = 0, right = 0;
+	int left = 0, right = 0, half = 0, i = 0;
 
 	if (array == NULL)
 		return (-1);
-	left = 0;
-	right = size;
 
-	return (binary_recursion(array, left, right, value));
+	right = size -1;
+
+	while (left <= right)
+	{
+		printf("Searching in array: ");
+		for (i = left; i <= right; i++)
+		{
+			if (i == right)
+			{
+				printf("%d", array[i]);
+				break;
+			}
+			printf("%d, ", array[i]);
+		}
+		printf("\n");
+
+		half = (left + right) / 2;
+
+		if (array[half] == value)
+			return (half);
+
+		else if (array[half] > value)
+			right = half - 1;
+
+		else if (array[half] < value)
+			left = half + 1;
+	}
+	return (-1);
 }
